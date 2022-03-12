@@ -11,32 +11,32 @@ export default function NavBar() {
       <ul className="nav">
         <li className="nav-item">
           <Link href="/" passHref scroll={false}> 
-            <Button className={styles.navText} variant="dark" size="lg" active>All</Button>
+            <Button className={styles.navText} variant="dark" size="lg" >All</Button>
           </Link>
         </li>
         <li className="nav-item">
           <Link href="/dapps" passHref scroll={false}>
-            <Button className={styles.navText} variant="dark" size="lg" active>dApps</Button>
+            <Button className={styles.navText} variant="dark" size="lg" >dApps</Button>
           </Link>
         </li>
         <li className="nav-item">
           <Link href="/games" passHref scroll={false}>
-            <Button className={styles.navText} variant="dark" size="lg" active>Games</Button>
+            <Button className={styles.navText} variant="dark" size="lg" >Games</Button>
           </Link>
         </li>
         <li className="nav-item">
           <Link href="/game-servers" passHref scroll={false}>
-            <Button className={styles.navText} variant="dark" size="lg" active>Game servers</Button>
+            <Button className={styles.navText} variant="dark" size="lg" >Game servers</Button>
           </Link>
         </li>
         <li className="nav-item">
           <Link href="/other" passHref scroll={false}>
-            <Button className={styles.navText} variant="dark" size="lg" active>Other</Button>
+            <Button className={styles.navText} variant="dark" size="lg" >Other</Button>
           </Link>
         </li>
         <li className="nav-item">
           <Link href="/fluxLinks" passHref scroll={false}>
-            <Button className={styles.navText} variant="dark" size="lg" active> Flux Links</Button>
+            <Button className={styles.navText} variant="dark" size="lg" > Flux Links</Button>
           </Link>
         </li>
       </ul>

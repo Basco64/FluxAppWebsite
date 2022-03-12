@@ -1,0 +1,387 @@
+{
+    "linkList": [
+        {
+            "name": "main",
+            "data": [
+                {
+                    "title": "Twitter",
+                    "img": "/twitter-logo.jpg",
+                    "link": "https://twitter.com/RunOnFlux"
+                },
+                {
+                    "title": "Facebook",
+                    "img": "/FB_official_website.png",
+                    "link": "https://www.facebook.com/runonflux"
+                },
+                {
+                    "title": "Discord",
+                    "img": "/discord-logo-logodownload-download-logotipos-1.png",
+                    "link": "https://discord.io/runonflux"
+                },
+                {
+                    "title": "BitcoinTalk",
+                    "img": "/BitcoinTalk_logo.jpg",
+                    "link": "https://bitcointalk.org/index.php?topic=2853688.0"
+                },
+                {
+                    "title": "Telegram",
+                    "img": "/Telegram_2019_Logo.svg.png",
+                    "link": "https://t.me/runonflux"
+                },
+                {
+                    "title": "GitHub",
+                    "img": "/GitHub-Mark.png",
+                    "link": "https://github.com/RunOnFlux"
+                },
+                {
+                    "title": "YouTube",
+                    "img": "/YouTube_logo.png",
+                    "link": "https://www.youtube.com/channel/UCphbdfb1MXYgUPsdhQPcnGw"
+                },
+                {
+                    "title": "Medium",
+                    "img": "/medium_newLogo.png",
+                    "link": "https://fluxofficial.medium.com/"
+                },
+                {
+                    "title": "LinkedIn",
+                    "img": "/Linkedin_circle.svg_.png",
+                    "link": "https://www.linkedin.com/company/flux-official"
+                },
+                {
+                    "title": "Twitch",
+                    "img": "/twitch_logo2.jpg",
+                    "link": "https://www.twitch.tv/runonflux"
+                },
+                {
+                    "title": "Instagram",
+                    "img": "/insta_logo3.png",
+                    "link": "https://www.instagram.com/flux_runonflux/"
+                },
+                {
+                    "title": "TikTok",
+                    "img": "/tikTok_logo2.jpg",
+                    "link": "https://www.tiktok.com/@flux_runonflux"
+                }
+            ]
+        },
+        {
+            "name": "games",
+            "data": [
+                {
+                    "title": "Radius Game",
+                    "creator": "jackrugile",
+                    "img": "/radiusGame.jpg",
+                    "link": "https://radiusraid.app.runonflux.io/"
+                },
+                {
+                    "title": "Bounce Back",
+                    "creator": "Franck Force",
+                    "img": "/bounceBack.png",
+                    "link": "https://bounceback.app.runonflux.io/"
+                },
+                {
+                    "title": "HexGL",
+                    "creator": "BKcore",
+                    "img": "/hexGL.png",
+                    "link": "https://hexGL.app.runonflux.io/"
+                },
+                {
+                    "title": "Level 13",
+                    "creator": "nroutasuo",
+                    "img": "/lvl13.png",
+                    "link":"https://level13.app.runonflux.io/"
+                },
+                {
+                    "title": "Light Bike",
+                    "creator": "dpren",
+                    "img": "/ligthtbike2.png",
+                    "link":"https://lightbike.app.runonflux.io/"
+                },
+                {
+                    "title": "Dwarf Game",
+                    "creator": "mvasilkov",
+                    "img": "/dwarf.png",
+                    "link":"https://dwarfs.app.runonflux.io/"
+                },
+                {
+                    "title": "The House",
+                    "creator": "arturkot",
+                    "img": "/theHouse.png",
+                    "link":"https://thehouse.app.runonflux.io/"
+                },
+                {
+                    "title": "Progress Knight",
+                    "creator": "Ihtasham42",
+                    "img": "/progressKnight.jpg",
+                    "link":"https://progressKnight.app.runonflux.io/"
+                },
+                {
+                    "title": "Prestige Tree",
+                    "creator": "Jacorb90",
+                    "img": "/Prestige_tree.png",
+                    "link":"https://prestigetree.app.runonflux.io/"
+                },
+                {
+                    "title": "Space Company",
+                    "creator": "sparticle999",
+                    "img": "/space.png",
+                    "link":"https://spaceCompany.app.runonflux.io/"
+                },
+                {
+                    "title": "Evolve",
+                    "creator": "pmotschmann",
+                    "img": "/evolve_logo.jpg",
+                    "link":"https://evolve.app.runonflux.io/"
+                },
+                {
+                    "title": "CivClicker",
+                    "creator": "David H. and Scott A. C.",
+                    "img": "/civClicker_logo2.png",
+                    "link":"https://civclicker.app.runonflux.io/"
+                },
+                {
+                    "title": "Gift Run",
+                    "creator": "Ole Martin Bjørndalen",
+                    "img": "/giftRun_logo.png",
+                    "link":"https://giftrun.app.runonflux.io/"
+                }
+            ]
+        },
+        {
+            "name": "other",
+            "data": [
+                {
+                    "title": "Flux Node Rank",
+                    "img": "/fluxNode_logo.png",
+                    "link": "https://nodify.app.runonflux.io/"
+                },
+                {
+                    "title": "Flux Whitepaper",
+                    "img": "/flux_logo.png",
+                    "link": "https://fluxwhitepaper.app.runonflux.io/"
+                },
+                {
+                    "title": "Flux Whitepaper Translations",
+                    "img": "/flux_logo.png",
+                    "link": "https://translations.app.runonflux.io/"
+                },
+                {
+                    "title": "Zelcore",
+                    "img": "/zelcore_logo.png",
+                    "link": "https://zelcore.io/"
+                },
+                {
+                    "title": " libReddit",
+                    "img": "/libreddit.png",
+                    "link": "https://libreddit.app.runonflux.io/"
+                },
+                {
+                    "title": "Bitcoin Whitepaper",
+                    "img": "/Bitcoin.png",
+                    "link": "https://bitcoinwhitepaper.app.runonflux.io/"
+                },
+                {
+                    "title": "Bitcoin Whitepaper Audio",
+                    "img": "/Bitcoin.png",
+                    "link": "https://btcwhitepaperaudio.app.runonflux.io/"
+                },
+                {
+                    "title": "KDA Whitepaper ",
+                    "img": "/KDA_logo.png",
+                    "link": "https://kdapublicsummarypaper.app.runonflux.io/"
+                },
+                {
+                    "title": "KDA ChainWeb Whitepaper",
+                    "img": "/KDA_logo.png",
+                    "link": "https://kdachainwebwhitepaper.app.runonflux.io/"
+                },
+                {
+                    "title": "Flux Army Radio",
+                    "img": "/radio2.png",
+                    "link": "https://fluxarmyradio.app.runonflux.io/"
+                },
+                {
+                    "title": "AtlasCloud Testnet",
+                    "img": "/atlas-logo-neumorphism-light.png",
+                    "link": "https://atlascloudtestnet.app.runonflux.io/"
+                },
+                {
+                    "title": "PokerTH Servers Hosted on FluxOS - Port 34567",
+                    "img": "/flux poker .png",
+                    "link": "https://discord.com/channels/404415190835134464/870380555714326578/876145347255238656"
+                }
+            ]
+        },
+        {
+            "name": "serverGame",
+            "data": [
+                {
+                    "game": "Minecraft",
+                    "img": "/minecraft logo.png",
+                    "name": "Vanilla Java-Based Minecraft Server",
+                    "port": "33333"
+                },
+                {
+                    "game": "Minecraft",
+                    "img": "/minecraft logo.png",
+                    "name": "Minecraft Bedrock Server",
+                    "port": "35565"
+                },
+                {
+                    "game": "Minecraft",
+                    "img": "/minecraft logo.png",
+                    "name": "Minecraft Server",
+                    "port": "31906"
+                },
+                {
+                    "game": "Ark",
+                    "img": "/ark_logo.png",
+                    "name": "Ark: Survival Evolved Server",
+                    "port": "36481"
+                },
+                {
+                    "game": "Valheim",
+                    "img": "/valheim-logo.jpg",
+                    "name": "Valheim Server",
+                    "port": "39870"
+                },
+                {
+                    "game": "TeamSpeak",
+                    "img": "/TS_logo.png",
+                    "name": "ClemTSOnFlux TeamSpeak server",
+                    "port": "33806, 33807, 33809"
+                },
+                {
+                    "game": "TeamSpeak",
+                    "img": "/TS_logo.png",
+                    "name": "BarinaZona TeamSpeak Server",
+                    "port": "34898, 34899, 34900"
+                },
+                {
+                    "game": "Terraria",
+                    "img": "/terraria.png",
+                    "name": "Terraria servers",
+                    "port": "34250, 36735"
+                }
+            ]
+        },
+        {
+            "name": "dapps",
+            "data": [
+                {
+                    "title": "Haven",
+                    "img": "/haven_logo.png",
+                    "link": "https://havenwebvault.app.runonflux.io/"
+                },
+                {
+                    "title": "KDLaunch",
+                    "img": "/KDLaunch_logo.png",
+                    "link": "https://kdlaunch.app.runonflux.io/"
+                },
+                {
+                    "title": "Wiins",
+                    "creator": "etsraphael",
+                    "img": "/wins-icon.png",
+                    "link": "https://wiins.app.runonflux.io/"
+                },
+                {
+                    "title": "Drawio",
+                    "creator": "jgraph",
+                    "img": "/drawio_logo.png",
+                    "link": "https://drawio.app.runonflux.io/"
+                },
+                {
+                    "title": "FluxOS",
+                    "creator": null,
+                    "img": "/FluxOS_logo_Grey_cube.png",
+                    "link": "https://home.runonflux.io/"
+                },
+                {
+                    "title": "Flux Block Explorer",
+                    "creator": null,
+                    "img": "/flux_logo.png",
+                    "link": "https://explorer.app.runonflux.io/"
+                },
+                {
+                    "title": "OS13k",
+                    "creator": "FrankForce",
+                    "img": "/os13k.png",
+                    "link": "https://os13k.app.runonflux.io/"
+                },
+                {
+                    "title": "SyncPaint",
+                    "creator": " Pkrasicki",
+                    "img": "/syncPaint.png",
+                    "link": "https://syncpaint.app.runonflux.io/"
+                },
+                {
+                    "title": "PrivateBin",
+                    "creator": null,
+                    "img": "/privateBin.png",
+                    "link": "https://privatebin.app.runonflux.io/"
+                },
+                {
+                    "title": "SyncTube",
+                    "creator": null,
+                    "img": "/syncTube.png",
+                    "link": "https://synctube.app.runonflux.io/"
+                },
+                {
+                    "title": "Grocy",
+                    "creator": null,
+                    "img": "/grocy.png",
+                    "link": "https://grocy.app.runonflux.io/login"
+                },
+                {
+                    "title": "Whoogle",
+                    "creator": null,
+                    "img": "/whoogle.png",
+                    "link": "https://whoogle.app.runonflux.io/"
+                },
+                {
+                    "title": "YaCy",
+                    "creator": null,
+                    "img": "/yacy.png",
+                    "link": "https://yacy.app.runonflux.io/"
+                },
+                {
+                    "title": "WhiteBoard",
+                    "creator": null,
+                    "img": "/wbo.png",
+                    "link": "https://wbo.app.runonflux.io/"
+                },
+                {
+                    "title": "FocalBoard",
+                    "creator": null,
+                    "img": "/focalBoard.jpg",
+                    "link": "https://focalboard.app.runonflux.io/login"
+                },
+                {
+                    "title": "RustPad",
+                    "creator": null,
+                    "img": "/rustpad.png",
+                    "link": "https://rustpad.app.runonflux.io/"
+                },
+                {
+                    "title": "EtherCalc",
+                    "creator": null,
+                    "img": "/ethercalc.png",
+                    "link": "https://ethercalc.app.runonflux.io/"
+                },
+                {
+                    "title": "OwnCast",
+                    "creator": "gabekangas",
+                    "img": "/ownCast.png",
+                    "link": "https://owncast.app.runonflux.io/"
+                },
+                {
+                    "title": "Bibliogram",
+                    "creator": "cloudrac3r",
+                    "img": "/logo-bibliogram.png",
+                    "link": "https://bibliogram.app.runonflux.io/"
+                }
+            ]
+        }
+    ]
+}

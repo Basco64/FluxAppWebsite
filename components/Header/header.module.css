@@ -1,0 +1,11 @@
+.imageContainer {
+    padding: 1.5rem;
+    box-sizing: content-box;
+    text-align: center;
+
+    }
+
+.imageContainer > span{
+    box-shadow: black 1em 1em 0.6em;
+    border-radius: 5em 
+}

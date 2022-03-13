@@ -8,7 +8,6 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="viewport-fit=cover" />
-        <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet" />
       </Head>
         <Component {...pageProps} />
     </>

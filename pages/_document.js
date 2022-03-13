@@ -6,9 +6,11 @@ class MyDocument extends Document {
     render() {
         return (
             <Html >
-                <Head />
-                    <Main />
-                    <NextScript />
+                <Head>
+                    <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet" />
+                </Head>
+                <Main />
+                <NextScript />
             </Html>
         );
     }

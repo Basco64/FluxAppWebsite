@@ -21,7 +21,6 @@ export default function quatreCentQuatre() {
                     objectFit='contain'
                     width={1280}
                     height={720}
-
                 />
             </div>
         </>

@@ -3,13 +3,13 @@ import Image from 'next/image'
 import FooterHome from '../components/Footers/FooterHome';
 import Head from 'next/head'
 import Header from '../components/Header/Header';
-import Button from 'react-bootstrap/Button';
 import styles from '../styles/lien.module.css'
+import { MDBBtn } from 'mdb-react-ui-kit';
 
 
 export default function Home(props) {
 
-  const widthCard = { width: "19rem" }
+  const widthCard = { width: "20rem" }
 
   const games = props.array[1].data
   const other = props.array[2].data
@@ -27,7 +27,7 @@ export default function Home(props) {
           {dapps.map(icone => (
             <div className="p-1 mb-3" style={widthCard} key={uuidv4()}>
               <Image
-                className="card-img"
+                className="card-img borderRadius"
                 src={icone.img}
                 alt="Card image"
                 width={200}
@@ -36,15 +36,15 @@ export default function Home(props) {
               <div>
                 <h5 className="">{icone.title}</h5>
                 <div className="text-center">
-                  <Button variant="dark">
-                    <a
-                      className={styles.a}
-                      target="_blank"
-                      rel="noreferrer"
-                      href={icone.link}>
-                      Access
-                    </a>
-                  </Button>
+                  <MDBBtn
+                    outline rounded
+                    color='dark'
+                    className={styles.a}
+                    target="_blank"
+                    rel="noreferrer"
+                    href={icone.link}>
+                    Access
+                  </MDBBtn>
                 </div>
               </div>
             </div>
@@ -52,7 +52,7 @@ export default function Home(props) {
           {games.map(icone => (
             <div className="p-1 mb-3" style={widthCard} key={uuidv4()}>
               <Image
-                className="card-img"
+                className="card-img borderRadius"
                 src={icone.img}
                 alt="Card image"
                 width={200}
@@ -61,15 +61,15 @@ export default function Home(props) {
               <div>
                 <h5 className="">{icone.title}</h5>
                 <div className="text-center">
-                  <Button variant="dark" >
-                    <a
-                      className={styles.a}
-                      target="_blank"
-                      rel="noreferrer"
-                      href={icone.link}>
-                      Access
-                    </a>
-                  </Button>
+                <MDBBtn
+                    outline rounded
+                    color='dark'
+                    className={styles.a}
+                    target="_blank"
+                    rel="noreferrer"
+                    href={icone.link}>
+                    Access
+                  </MDBBtn>
                 </div>
               </div>
             </div>
@@ -77,7 +77,7 @@ export default function Home(props) {
           {other.map(icone => (
             <div className="p-1 mb-3" style={widthCard} key={uuidv4()}>
               <Image
-                className="card-img"
+                className="card-img borderRadius"
                 src={icone.img}
                 alt="Card image"
                 width={200}
@@ -86,15 +86,15 @@ export default function Home(props) {
               <div>
                 <h5 className="">{icone.title}</h5>
                 <div className="text-center">
-                  <Button variant="dark" >
-                    <a
-                      className={styles.a}
-                      target="_blank"
-                      rel="noreferrer"
-                      href={icone.link}>
-                      Access
-                    </a>
-                  </Button>
+                <MDBBtn
+                    outline rounded
+                    color='dark'
+                    className={styles.a}
+                    target="_blank"
+                    rel="noreferrer"
+                    href={icone.link}>
+                    Access
+                  </MDBBtn>
                 </div>
               </div>
             </div>

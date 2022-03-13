@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Footer from '../../components/Footers/Footer';
 import Head from 'next/head'
 import Header from '../../components/Header/Header';
-import Button from 'react-bootstrap/Button';
+import { MDBBtn } from 'mdb-react-ui-kit';
 import styles from '../../styles/lien.module.css'
 
 
@@ -19,9 +19,7 @@ export default function games(props) {
         <title>Games</title>
       </Head>
       <Header />
-      <div className="container">
-        <h2 className='text-center m-4 p-4'>Games hosted on the Flux network</h2>
-      </div>
+      <h2 className='text-center m-4 p-4'>Games hosted on the Flux network</h2>
       <div className='row no-gutters justify-content-between mx-auto p-2 mb-5'>
         {main.map(icone => (
           <div className=" mb-4 p-1 border-0 " style={widthCard} key={uuidv4()}>
@@ -37,15 +35,15 @@ export default function games(props) {
               <h3>{icone.title}</h3>
               {icone.creator && <h6 className="card-title">By : {icone.creator}</h6>}
               <div className="text-center">
-                <Button variant="dark" >
-                  <a
-                    className={styles.a}
-                    target="_blank"
-                    rel="noreferrer"
-                    href={icone.link}>
-                    Access
-                  </a>
-                </Button>
+                <MDBBtn
+                  outline rounded
+                  color='dark'
+                  className={styles.a}
+                  target="_blank"
+                  rel="noreferrer"
+                  href={icone.link}>
+                  Access
+                </MDBBtn>
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import styles from './Navbar.module.css'
-import Button from 'react-bootstrap/Button'
+import { MDBBtn } from 'mdb-react-ui-kit';
 
 
 export default function NavBar() {
@@ -10,33 +10,45 @@ export default function NavBar() {
     <div className={styles.divNav} >
       <ul className="nav">
         <li className="nav-item">
-          <Link href="/" passHref scroll={false}> 
-            <Button className={styles.navText} variant="dark" size="lg" >All</Button>
+          <Link href="/" passHref scroll={false}>
+            <MDBBtn rounded className={styles.navText} size="lg" color='dark'>
+              All
+            </MDBBtn>
           </Link>
         </li>
         <li className="nav-item">
           <Link href="/dapps" passHref scroll={false}>
-            <Button className={styles.navText} variant="dark" size="lg" >dApps</Button>
+            <MDBBtn rounded className={styles.navText} size="lg" color='dark'>
+              dApps
+            </MDBBtn>
           </Link>
         </li>
         <li className="nav-item">
           <Link href="/games" passHref scroll={false}>
-            <Button className={styles.navText} variant="dark" size="lg" >Games</Button>
+            <MDBBtn rounded className={styles.navText} size="lg" color='dark'>
+              Games
+            </MDBBtn>
           </Link>
         </li>
         <li className="nav-item">
           <Link href="/game-servers" passHref scroll={false}>
-            <Button className={styles.navText} variant="dark" size="lg" >Game servers</Button>
+            <MDBBtn rounded className={styles.navText} size="lg" color='dark'>
+              Game servers
+            </MDBBtn>
           </Link>
         </li>
         <li className="nav-item">
           <Link href="/other" passHref scroll={false}>
-            <Button className={styles.navText} variant="dark" size="lg" >Other</Button>
+            <MDBBtn rounded className={styles.navText} size="lg" color='dark'>
+              Other
+            </MDBBtn>
           </Link>
         </li>
         <li className="nav-item">
           <Link href="/fluxLinks" passHref scroll={false}>
-            <Button className={styles.navText} variant="dark" size="lg" > Flux Links</Button>
+            <MDBBtn rounded className={styles.navText} size="lg" color='dark'>
+              Flux Links
+            </MDBBtn>
           </Link>
         </li>
       </ul>

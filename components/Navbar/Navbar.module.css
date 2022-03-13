@@ -19,6 +19,6 @@
     color: #35C9A5;
 }
 
-.navText::selection{
+.navText:focus{
     color: white;
 }

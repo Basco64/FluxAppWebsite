@@ -3,12 +3,12 @@ import Image from 'next/image'
 import Footer from '../../components/Footers/Footer';
 import Head from 'next/head'
 import Header from '../../components/Header/Header';
-import Button from 'react-bootstrap/Button';
+import { MDBBtn } from 'mdb-react-ui-kit';
 import styles from '../../styles/lien.module.css'
 
 export default function Home(props) {
 
-  const widthCard = { width: "19rem" }
+  const widthCard = { width: "20rem" }
 
   const main = props.array[0].data
 
@@ -21,11 +21,11 @@ export default function Home(props) {
       <div className="container">
         <h2 className='text-center m-4 p-4'>Official Flux Links</h2>
       </div>
-      <div className='row justify-content-center  m-1 p-2 mb-5'>
+      <div className='row justify-content-center mx-auto p-2 mb-5'>
         {main.map(icone => (
           <div className="p-1 mb-3" style={widthCard} key={uuidv4()}>
             <Image
-              className="card-img"
+              className="card-img borderRadius"
               src={icone.img}
               alt="Card image"
               width={200}
@@ -34,15 +34,15 @@ export default function Home(props) {
             <div>
               <h5>{icone.title}</h5>
               <div className="text-center">
-                <Button variant="dark">
-                  <a
-                    className={styles.a}
-                    target="_blank"
-                    rel="noreferrer"
-                    href={icone.link}>
-                    Access
-                  </a>
-                </Button>
+                <MDBBtn
+                  outline rounded
+                  color='dark'
+                  className={styles.a}
+                  target="_blank"
+                  rel="noreferrer"
+                  href={icone.link}>
+                  Access
+                </MDBBtn>
               </div>
             </div>
           </div>

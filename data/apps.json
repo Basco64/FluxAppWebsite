@@ -270,6 +270,16 @@
             "name": "dapps",
             "data": [
                 {
+                    "title": "Dolibarr",
+                    "img": "/dolibarr_logo.png",
+                    "link": "https://dolibarr.app.runonflux.io/"
+                },
+                {
+                    "title": "NGinx",
+                    "img": "/nginx_logo.png",
+                    "link": "https://corkscrewtest.app.runonflux.io/"
+                },
+                {
                     "title": "Haven",
                     "img": "/haven_logo.png",
                     "link": "https://havenwebvault.app.runonflux.io/"

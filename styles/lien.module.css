@@ -1,11 +1,11 @@
 .a{  
-    color: white;
-    background: linear-gradient(#35C9A5  65%, black  100%);
+  color: white;
+  background: radial-gradient(#35C9A5  33%, black  100%);
   }
 
 .a:hover{
   color: black;
-  background: linear-gradient(white 20%, #35C9A5  100%);
+  background: radial-gradient(white 15%, #35C9A5  100%);
 }
   
 .divGlobal{

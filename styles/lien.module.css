@@ -1,15 +1,18 @@
 .a{  
   color: #F5F5F5;
-  background: radial-gradient(#35C9A5  33%, black  100%);
+  background: radial-gradient(#35C9A5  40%, black  100%);
   }
 
 .a:hover{
   color: black;
   background: radial-gradient(white 15%, #35C9A5  100%);
 }
-  
-.divGlobal{
-  display: flex;
-  justify-content:space-around;
-  margin-inline-start: 2.5rem;
+
+.bgbody{
+  background: #F3F4F6;
+}
+
+.bgbody404{
+  background: #F3F4F6;
+  padding-bottom: 1em;
 }

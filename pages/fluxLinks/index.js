@@ -14,39 +14,41 @@ export default function Home(props) {
 
   return (
     <>
-      <Head>
-        <title>Official Flux Links</title>
-      </Head>
-      <Header />
-      <div className="container">
-        <h2 className='text-center m-4 p-4'>Official Flux Links</h2>
-      </div>
-      <div className='row justify-content-center mx-auto p-2 mb-5'>
-        {main.map(icone => (
-          <div className="p-1 mb-3" style={widthCard} key={uuidv4()}>
-            <Image
-              className="card-img borderRadius"
-              src={icone.img}
-              alt="Card image"
-              width={200}
-              height={200}
-            />
-            <div>
-              <h5>{icone.title}</h5>
-              <div className="text-center">
-                <MDBBtn
-                  outline rounded
-                  color='dark'
-                  className={styles.a}
-                  target="_blank"
-                  rel="noreferrer"
-                  href={icone.link}>
-                  Access
-                </MDBBtn>
+      <div className={styles.bgbody}>
+        <Head>
+          <title>Official Flux Links</title>
+        </Head>
+        <Header />
+        <div className="container">
+          <h2 className='text-center m-4 p-4'>Official Flux Links</h2>
+        </div>
+        <div className='row justify-content-center mx-auto p-2 mb-5'>
+          {main.map(icone => (
+            <div className="p-1 mb-3" style={widthCard} key={uuidv4()}>
+              <Image
+                className="card-img borderRadius"
+                src={icone.img}
+                alt="Card image"
+                width={200}
+                height={200}
+              />
+              <div>
+                <h5>{icone.title}</h5>
+                <div className="text-center">
+                  <MDBBtn
+                    outline rounded
+                    color='dark'
+                    className={styles.a}
+                    target="_blank"
+                    rel="noreferrer"
+                    href={icone.link}>
+                    Access
+                  </MDBBtn>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
       <Footer />
     </>

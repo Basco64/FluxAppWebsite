@@ -11,30 +11,32 @@ export default function games(props) {
 
   return (
     <>
-      <Head>
-        <title>Game Server</title>
-      </Head>
-      <Header />
-      <div className="mx-auto">
-        <h2 className='text-center m-4 p-4'>Game Server hosted on the Flux network</h2>
-        <div className={styles.divGlobal}>
-          <div className='row no-gutters justify-content-between mx-auto m-5 p-2'>
-            {main.map(icone => (
-              <div className=" mb-4 p-1 border-0 " style={{width: "18rem"}} key={uuidv4()}>
-                <h3 className="card-title">{icone.game}</h3>
-                <Image
-                  className=" card-img borderRadius"
-                  src={icone.img}
-                  alt="Card image"
-                  width={200}
-                  height={200}
-                />
-                <div className=" center-block text" style={{width: "14rem"}}>
-                  <h5 className="card-title"> {icone.name}</h5>
-                  <h6 className="card-title"> on Port : {icone.port}</h6>
+      <div className={styles.bgbody}>
+        <Head>
+          <title>Game Server</title>
+        </Head>
+        <Header />
+        <div className="mx-auto">
+          <h2 className='text-center m-4 p-4'>Game Server hosted on the Flux network</h2>
+          <div className={styles.divGlobal}>
+            <div className='row no-gutters justify-content-between mx-auto m-5 p-2'>
+              {main.map(icone => (
+                <div className=" mb-4 p-1 border-0 " style={{ width: "18rem" }} key={uuidv4()}>
+                  <h3 className="card-title">{icone.game}</h3>
+                  <Image
+                    className=" card-img borderRadius"
+                    src={icone.img}
+                    alt="Card image"
+                    width={200}
+                    height={200}
+                  />
+                  <div className=" center-block text" style={{ width: "14rem" }}>
+                    <h5 className="card-title"> {icone.name}</h5>
+                    <h6 className="card-title"> on Port : {icone.port}</h6>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

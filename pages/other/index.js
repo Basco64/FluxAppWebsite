@@ -13,37 +13,39 @@ export default function Home(props) {
   const main = props.array[2].data
   return (
     <>
-      <Head>
-        <title>Other apps</title>
-      </Head>
-      <Header />
-      <h2 className='text-center m-4 p-4'></h2>
-      <div className='row justify-content-center mx-auto p-2 mb-5 '>
-        {main.map(icone => (
-          <div className="p-1 mb-3" style={widthCard} key={uuidv4()}>
-            <Image
-              className="card-img borderRadius"
-              src={icone.img}
-              alt="Card image"
-              width={200}
-              height={200}
-            />
-            <div>
-              <h5 style={{ width: "15rem" }}>{icone.title}</h5>
-              <div className="text-center">
-                <MDBBtn
-                  outline rounded
-                  color='dark'
-                  className={styles.a}
-                  target="_blank"
-                  rel="noreferrer"
-                  href={icone.link}>
-                  Access
-                </MDBBtn>
+      <div className={styles.bgbody}>
+        <Head>
+          <title>Other apps</title>
+        </Head>
+        <Header />
+        <h2 className='text-center m-4 p-4'></h2>
+        <div className='row justify-content-center mx-auto p-2 mb-5 '>
+          {main.map(icone => (
+            <div className="p-1 mb-3" style={widthCard} key={uuidv4()}>
+              <Image
+                className="card-img borderRadius"
+                src={icone.img}
+                alt="Card image"
+                width={200}
+                height={200}
+              />
+              <div>
+                <h5 style={{ width: "15rem" }}>{icone.title}</h5>
+                <div className="text-center">
+                  <MDBBtn
+                    outline rounded
+                    color='dark'
+                    className={styles.a}
+                    target="_blank"
+                    rel="noreferrer"
+                    href={icone.link}>
+                    Access
+                  </MDBBtn>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
       <Footer />
     </>

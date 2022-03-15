@@ -270,6 +270,11 @@
             "name": "dapps",
             "data": [
                 {
+                    "title": "Tornado.cash",
+                    "img": "/tornado_logo.png",
+                    "link": "https://tornadocash.app.runonflux.io/"
+                },
+                {
                     "title": "Dolibarr",
                     "img": "/dolibarr_logo.png",
                     "link": "https://dolibarr.app.runonflux.io/"

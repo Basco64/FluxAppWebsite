@@ -14,7 +14,7 @@ export default function Home(props) {
 
   return (
     <>
-      <div className={styles.bgbody}>
+      <div className='body'>
         <Head>
           <title>Official Flux Links</title>
         </Head>

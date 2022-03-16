@@ -270,6 +270,16 @@
             "name": "dapps",
             "data": [
                 {
+                    "title": "Keep Token Dashboard",
+                    "img": "/KeepToken_logo.png",
+                    "link": "https://keepnetwork.app.runonflux.io/overview"
+                },
+                {
+                    "title": "Sifchain",
+                    "img": "/SifchainGold_logo.png",
+                    "link": "https://sifchainfinance.app.runonflux.io/"
+                },
+                {
                     "title": "Tornado.cash",
                     "img": "/tornado_logo.png",
                     "link": "https://tornadocash.app.runonflux.io/"

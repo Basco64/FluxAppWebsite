@@ -13,7 +13,7 @@ export default function Home(props) {
   const main = props.array[2].data
   return (
     <>
-      <div className={styles.bgbody}>
+      <div className='body'>
         <Head>
           <title>Other apps</title>
         </Head>

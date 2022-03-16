@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import Head from 'next/head'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css'
+import ToggleDarkAndLight from '../components/ToggleDark&Light/ToggleDarkAndLight'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -9,7 +10,9 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="viewport-fit=cover" />
       </Head>
-        <Component {...pageProps} />
+      <ToggleDarkAndLight />
+        <Component {...pageProps}>
+        </Component>
     </>
   )
 }

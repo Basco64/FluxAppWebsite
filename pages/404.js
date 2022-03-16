@@ -1,14 +1,13 @@
 import img from '../public/ICP-TOKEN.001.jpeg'
 import Image from 'next/image'
 import Head from 'next/head'
-import styles from '../styles/lien.module.css'
 import NavBar from '../components/Navbar/Navbar'
 import Footer from '../components/Footers/Footer'
 
 export default function quatreCentQuatre() {
     return (
         <>
-            <div className={styles.bgbody404}>
+            <div className='body'>
                 <Head>
                     <title>Page not Found</title>
                 </Head>

@@ -15,7 +15,7 @@ export default function games(props) {
 
   return (
     <>
-      <div className={styles.bgbody}>
+      <div className='body'>
         <Head>
           <title>Games</title>
         </Head>

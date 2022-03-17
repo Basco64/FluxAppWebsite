@@ -16,11 +16,11 @@ export default function Home(props) {
     <>
       <div className='body'>
         <Head>
-          <title>Official Flux Links</title>
+          <title>Flux Social Networks</title>
         </Head>
         <Header />
         <div className="container">
-          <h2 className='text-center m-4 p-4'>Official Flux Links</h2>
+          <h2 className='text-center m-4 p-4'>Official Flux Social Networks</h2>
         </div>
         <div className='row justify-content-center mx-auto p-2 mb-5'>
           {main.map(icone => (

@@ -1,8 +1,8 @@
 .toggle{
   float:right;
   display:flex;
-  margin-top: 1em;
-  margin-right: 1em;
+  margin-top: 1.5em;
+  margin-right: 2em;
 }
 
 .switch {

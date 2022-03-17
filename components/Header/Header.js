@@ -14,9 +14,8 @@ export default  function Header() {
                 src={img1}
                 alt="fluxBanner"
                 placeholder='blur'
-                objectFit='contain'
                 width={840}
-                height={385}
+                height={385}             
             />
             </div>
             <h1 className='text-center m-1 p-1'>Welcome in the Flux dApps World</h1>

@@ -24,18 +24,20 @@ export default function games(props) {
         <h2 className='text-center m-4 p-4'>dApps hosted on the Flux network</h2>
         <div className='row no-gutters justify-content-between mx-auto p-2 mb-5 '>
           {main.map(icone => (
-            <div className="p-1 mb-3" style={widthCard} key={uuidv4()}>
-              <Image
-                className="card-img borderRadius"
-                src={icone.img}
-                alt="Card image"
-                width={200}
-                height={200}
-              />
+            <div className="p-1 mb-4" style={widthCard} key={uuidv4()}>
+              <div className='text-center'>
+                <Image
+                  className="card-img borderRadius"
+                  src={icone.img}
+                  alt="Card image"
+                  width={200}
+                  height={200}
+                />
+              </div>
               <div className=" center-block text">
-                <h5>{icone.title}</h5>
-                {icone.creator && <h6 className="card-title">By : {icone.creator}</h6>}
-                <div className="text-center">
+                <h5 className="text-center">{icone.title}</h5>
+                {icone.creator && <h6 className="card-title text-center">By : {icone.creator}</h6>}
+                <div className="text-end me-5">
                   <MDBBtn
                     outline rounded
                     color='dark'

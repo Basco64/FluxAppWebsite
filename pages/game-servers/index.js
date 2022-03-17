@@ -19,12 +19,11 @@ export default function games(props) {
         <div className="mx-auto">
           <h2 className='text-center m-4 p-4'>Game Server hosted on the Flux network</h2>
           <div className={styles.divGlobal}>
-            <div className='row no-gutters justify-content-between mx-auto m-5 p-2'>
+            <div className='row no-gutters text-center justify-content-between mx-auto m-5 p-2'>
               {main.map(icone => (
-                <div className=" mb-4 p-1 border-0 " style={{ width: "18rem" }} key={uuidv4()}>
-                  <h3 className="card-title">{icone.game}</h3>
+                <div className="p-1 mb-4" style={{ width: "18rem" }} key={uuidv4()}>
                   <Image
-                    className=" card-img borderRadius"
+                    className="card-img borderRadius"
                     src={icone.img}
                     alt="Card image"
                     width={200}

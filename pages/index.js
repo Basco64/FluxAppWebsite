@@ -26,17 +26,19 @@ export default function Home(props) {
         <h2 className='text-center m-4 p-4'>All Flux network dApps</h2>
         <div className='row no-gutters justify-content-between mx-auto p-2 mb-5'>
           {dapps.map(icone => (
-            <div className="p-1 mb-3" style={widthCard} key={uuidv4()}>
-              <Image
-                className="card-img borderRadius"
-                src={icone.img}
-                alt="Card image"
-                width={200}
-                height={200}
-              />
+            <div className="p-1 mb-4" style={widthCard} key={uuidv4()}>
+              <div className='text-center'>
+                <Image
+                  className="card-img borderRadius"
+                  src={icone.img}
+                  alt="Card image"
+                  width={200}
+                  height={200}
+                />
+              </div>
               <div>
-                <h5>{icone.title}</h5>
-                <div className="text-center">
+                <h5 className="text-center">{icone.title}</h5>
+                <div className="text-end me-5">
                   <MDBBtn
                     outline rounded
                     color='dark'
@@ -51,17 +53,19 @@ export default function Home(props) {
             </div>
           ))}
           {games.map(icone => (
-            <div className="p-1 mb-3" style={widthCard} key={uuidv4()}>
-              <Image
-                className="card-img borderRadius"
-                src={icone.img}
-                alt="Card image"
-                width={200}
-                height={200}
-              />
+            <div className="p-1 mb-4" style={widthCard} key={uuidv4()}>
+              <div className='text-center'>
+                <Image
+                  className="card-img borderRadius"
+                  src={icone.img}
+                  alt="Card image"
+                  width={200}
+                  height={200}
+                />
+              </div>
               <div>
-                <h5 className="">{icone.title}</h5>
-                <div className="text-center">
+                <h5 className="text-center">{icone.title}</h5>
+                <div className="text-end me-5">
                   <MDBBtn
                     outline rounded
                     color='dark'
@@ -76,17 +80,19 @@ export default function Home(props) {
             </div>
           ))}
           {other.map(icone => (
-            <div className="p-1 mb-3" style={widthCard} key={uuidv4()}>
-              <Image
-                className="card-img borderRadius"
-                src={icone.img}
-                alt="Card image"
-                width={200}
-                height={200}
-              />
+            <div className="p-1 mb-4" style={widthCard} key={uuidv4()}>
+              <div className='text-center'>
+                <Image
+                  className="card-img borderRadius"
+                  src={icone.img}
+                  alt="Card image"
+                  width={200}
+                  height={200}
+                />
+              </div>
               <div>
-                <h5>{icone.title}</h5>
-                <div className="text-center">
+                <h5 className="text-center">{icone.title}</h5>
+                <div className="text-end me-5">
                   <MDBBtn
                     outline rounded
                     color='dark'

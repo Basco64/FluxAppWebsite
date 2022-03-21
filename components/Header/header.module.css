@@ -1,3 +1,10 @@
+.wrapper{
+    display: flex;
+    clear: both;
+   
+}
+
+
 .imageContainer {
     text-align: center;
     clear: both;

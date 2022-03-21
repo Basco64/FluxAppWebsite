@@ -4,21 +4,23 @@ import Image from 'next/image'
 import img1 from './FluxBanner2.png'
 import styles from './header.module.css'
 
-
-export default  function Header() {
+export default function Header() {
 
     return (
         <>
-        <div className={styles.imageContainer}>
-            <Image 
-                src={img1}
-                alt="fluxBanner"
-                placeholder='blur'
-                width={840}
-                height={385}             
-            />
+            <div className={styles.wrapper}>
+                <div className='col-6'>
+                    <div className={styles.imageContainer}>
+                        <Image
+                            src={img1}
+                            alt="fluxBanner"
+                            placeholder='blur'
+                            width={840}
+                            height={385}
+                        />
+                    </div>
+                </div>
             </div>
-            <h1 className='text-center m-1 p-1'>Welcome in the Flux dApps World</h1>
             <NavBar />
         </>
     )

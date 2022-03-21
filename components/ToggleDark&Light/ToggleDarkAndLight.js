@@ -1,7 +1,6 @@
-import switchTheme from "./switchTheme";
 import styles from './toggleDarkAndLight.module.css'
 
-export default function Home() {
+export default function ToggleDarkAndLight() {
 
   return (
     <div className={styles.toggle}>
@@ -10,7 +9,7 @@ export default function Home() {
           <label className={styles.switch}>
             <input
               type="checkbox"
-              onChange={switchTheme}
+              onClick={toggleTheme}
             />
             <span className={styles.slider}></span>
           </label>

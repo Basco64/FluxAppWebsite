@@ -7,17 +7,5 @@
 .body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: var(--background-color);
-  color: var(--font-color);
   padding-bottom: 1em;
-}
-
-:root {
-  --font-color: #333;
-  --background-color: #F3F4F6;
-}
-
-[data-theme="dark"] {
-  --font-color: #FFF;
-  --background-color: #333;
 }

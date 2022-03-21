@@ -152,6 +152,33 @@
             "name": "other",
             "data": [
                 {
+                    "title": "Haven Paper Wallet",
+                    "img": "/haven_logo.png",
+                    "link": "https://havenpaperwallet.app.runonflux.io/"
+                },
+                {
+                    "title": "Overview Parallel Mining",
+                    "img": "/fluxMining_logo.png",
+                    "link": "https://paoverview.app.runonflux.io/"
+                },
+                {
+                    "title": "Paradigm Whitepaper",
+                    "img": "/paradigm_logo.png",
+                    "link": "https://paradigmwhitepaper.app.runonflux.io/"
+                },
+                {
+                    "title": "FluxOS",
+                    "creator": null,
+                    "img": "/FluxOS_logo_Grey_cube.png",
+                    "link": "https://home.runonflux.io/"
+                },
+                {
+                    "title": "Flux Block Explorer",
+                    "creator": null,
+                    "img": "/flux_logo.png",
+                    "link": "https://explorer.app.runonflux.io/"
+                },
+                {
                     "title": "Flux Node Rank",
                     "img": "/fluxNode_logo.png",
                     "link": "https://nodify.app.runonflux.io/"
@@ -315,18 +342,6 @@
                     "creator": "jgraph",
                     "img": "/drawio_logo.png",
                     "link": "https://drawio.app.runonflux.io/"
-                },
-                {
-                    "title": "FluxOS",
-                    "creator": null,
-                    "img": "/FluxOS_logo_Grey_cube.png",
-                    "link": "https://home.runonflux.io/"
-                },
-                {
-                    "title": "Flux Block Explorer",
-                    "creator": null,
-                    "img": "/flux_logo.png",
-                    "link": "https://explorer.app.runonflux.io/"
                 },
                 {
                     "title": "OS13k",

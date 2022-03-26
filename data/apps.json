@@ -151,6 +151,11 @@
         {
             "name": "other",
             "data": [
+                 {
+                    "title": "PreSearch Vision Paper",
+                    "img": "/presearch_logo.png",
+                    "link": "https://presearchpaper.app.runonflux.io/"
+                },
                 {
                     "title": "Haven Paper Wallet",
                     "img": "/haven_logo.png",
@@ -296,6 +301,13 @@
         {
             "name": "dapps",
             "data": [
+                
+                {
+                    "title": "DocuShield",
+                    "img": "/docuShield_logo.png",
+                    "link": "https://docushield.app.runonflux.io/"
+                },
+                
                 {
                     "title": "Keep Token Dashboard",
                     "img": "/KeepToken_logo.png",

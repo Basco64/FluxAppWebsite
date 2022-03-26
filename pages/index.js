@@ -8,7 +8,6 @@ import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
 import styles from '../styles/Home.module.css'
 import Youtube from '../components/Youtube/Youtube';
-import { ThemeConsumer } from 'styled-components'
 
 
 export default function Home(props) {
@@ -16,18 +15,18 @@ export default function Home(props) {
   const fluxAPI = props.flux.data
   const geckoMarketData = props.gecko.market_data
 
-  let last24Price = "" 
-  if(Math.sign(geckoMarketData.price_change_24h_in_currency.usd.toFixed(3)) === 1 ){
+  let last24Price = ""
+  if (Math.sign(geckoMarketData.price_change_24h_in_currency.usd.toFixed(3)) === 1) {
     last24Price = "+"
-  } else{
+  } else {
     last24Price = ""
   }
 
-  let last24Percent=""
-  if(Math.sign(geckoMarketData.price_change_percentage_24h.toFixed(2)) === 1 ){
-    last24Percent="+"
-  }else{
-    last24Percent=""
+  let last24Percent = ""
+  if (Math.sign(geckoMarketData.price_change_percentage_24h.toFixed(2)) === 1) {
+    last24Percent = "+"
+  } else {
+    last24Percent = ""
   }
 
 
@@ -54,14 +53,14 @@ export default function Home(props) {
             </Card>
           </div>
           <div className='col-4'>
-            <h3 className='text-center'> Trade Flux Today !</h3>
+            <h3 className='text-center' style={{ textDecoration: "underline" }} > Trade Flux Today !</h3>
             <Tabs
               defaultActiveKey="USDT"
               id="tab"
               className="mb-3"
               variant='pills'
             >
-              <Tab eventKey="USDT" title="Flux/USDT">
+              <Tab eventKey="USDT" title="Flux/USDT" >
                 <div className={styles.boutons}>
                   <Button variant='dark' href="https://www.binance.com/en/trade/FLUX_USDT"> Binance </Button>
                   <Button variant='dark' href="https://www.gate.io/fr/trade/FLUX_USDT" > Gate.io </Button>
@@ -106,15 +105,16 @@ export default function Home(props) {
               <Card.Img variant="top" src="/FluxCard_logo.png" style={{ width: '4rem' }} />
               <Card.Body style={{ color: 'black' }}>
                 <Card.Title className='text-center'>Flux Token</Card.Title>
-                <Card.Text >
+                <Card.Text>
                   <Card.Text>Current Price :  {geckoMarketData.current_price.usd}$</Card.Text>
-                  <Card.Text>Last 24h : 
-                  {last24Price}{geckoMarketData.price_change_24h_in_currency.usd.toFixed(3)} $
-                    / 
-                  {last24Percent}{geckoMarketData.price_change_percentage_24h.toFixed(2)} %</Card.Text>
+                  <Card.Text>Last 24h :
+                    {last24Price}{geckoMarketData.price_change_24h_in_currency.usd.toFixed(3)} $
+                    /
+                    {last24Percent}{geckoMarketData.price_change_percentage_24h.toFixed(2)} %</Card.Text>
                   <Card.Text>Ath : {geckoMarketData.ath.usd} $</Card.Text>
                   <Card.Text>MarketCap :{geckoMarketData.market_cap.usd} $</Card.Text>
                   <Card.Text>MarketCap Rank :{geckoMarketData.market_cap_rank}</Card.Text>
+                  <Button className='' style={{ color: '#35C9A5', background: '#333' }} size='lg' href='https://www.coingecko.com/fr/pi%C3%A8ces/flux-zelcash' target='_blank'>@Coingecko</Button>
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -126,7 +126,7 @@ export default function Home(props) {
             <iframe src="https://discord.com/widget?id=725782879342428169&theme=dark" width="700" height="800" allowtransparency="true" framBorder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
             </div> */}
             <div className='col-6'>
-              <a className="twitter-timeline" data-width="700" data-height="800" data-theme="dark" href="https://twitter.com/RunOnFlux?ref_src=twsrc%5Etfw">Tweets by RunOnFlux</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <a className="twitter-timeline" data-width="700" data-height="800" data-theme="dark" href="https://twitter.com/RunOnFlux?ref_src=twsrc%5Etfw">Click here to be transferred to the RunOnFlux Twitter, or just refresh the page</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
           </div>
         </div>

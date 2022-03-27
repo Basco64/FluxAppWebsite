@@ -2,7 +2,7 @@ import React from "react";
 import YouTube from "react-youtube";
 import styles from  './youtube.module.css'
 
-export default class Youtube
+export default class YoutubeHome
 	extends React.Component {
 	render() {
 		const opts = {

@@ -7,7 +7,8 @@ import Button from 'react-bootstrap/Button'
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
 import styles from '../styles/Home.module.css'
-import Youtube from '../components/Youtube/Youtube';
+import YoutubeAMA from '../components/Youtube/YoutubeAMA';
+import YoutubeHome from '../components/Youtube/YoutubeHome';
 
 
 export default function Home(props) {
@@ -122,16 +123,17 @@ export default function Home(props) {
         </div>
         <div className='pt-5 pb-5 text-center'>
           <div className={styles.cartes}>
-            {/* <div className='col-6'>
-            <iframe src="https://discord.com/widget?id=725782879342428169&theme=dark" width="700" height="800" allowtransparency="true" framBorder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-            </div> */}
-            <div className='col-6'>
+            <div style={{ textDecoration: "underline", color: "#2b61d1" }}>
+              <h1>Last AMA</h1>
+              <YoutubeAMA />
+            </div>
+            <div>
               <a className="twitter-timeline" data-width="700" data-height="800" data-theme="dark" href="https://twitter.com/RunOnFlux?ref_src=twsrc%5Etfw">Click here to be transferred to the RunOnFlux Twitter, or just refresh the page</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
           </div>
         </div>
-        <div className='pb-2'>
-          <Youtube />
+        <div className='pb-5'>
+          <YoutubeHome />
         </div>
       </div>
       <Footer />

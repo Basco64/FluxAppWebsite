@@ -20,7 +20,7 @@ export default function games(props) {
           <title>Games</title>
         </Head>
         <Header />
-        <h2 className='text-center m-4 p-4'>Games hosted on the Flux network</h2>
+        <h2 className='m-4 p-4'>Games hosted on the Flux network</h2>
         <div className='row no-gutters justify-content-between mx-auto p-2 mb-5'>
           {main.map(icone => (
             <div className=" mb-4 p-1 border-0 " style={widthCard} key={uuidv4()}>

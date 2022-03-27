@@ -1,18 +1,16 @@
 .divNav{
-    padding  : 10px;
     display: flex;
-    justify-content: center;
-    margin: 10px;
-    padding: 15px;
+    justify-content:space-between;
+    padding-top: 2em;
 }
 
-.divNav ul li{
-    margin-right: 15px;
+.divNav ul li{ 
+    margin-inline: 1em;
 }
 
 .navText{
     color: #35C9A5;
-    letter-spacing: 2px;
+    letter-spacing: 0.1em;
 }
 
 .navText:hover{

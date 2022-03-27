@@ -8,9 +8,8 @@ export default function NavBar() {
 
   return (
     <div className={styles.divNav} >
-      
       <ul className="nav">
-      <li className="nav-item">
+        <li className="nav-item">
           <Link href="/" passHref scroll={false}>
             <MDBBtn rounded className={styles.navText} size="lg" color='dark'>
               Home
@@ -27,7 +26,7 @@ export default function NavBar() {
         <li className="nav-item">
           <Link href="/dapps" passHref scroll={false}>
             <MDBBtn rounded className={styles.navText} size="lg" color='dark'>
-            Community dApps
+              Community dApps
             </MDBBtn>
           </Link>
         </li>
@@ -63,5 +62,3 @@ export default function NavBar() {
     </div>
   )
 }
-
-

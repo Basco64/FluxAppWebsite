@@ -151,7 +151,7 @@
         {
             "name": "other",
             "data": [
-                 {
+                {
                     "title": "PreSearch Vision Paper",
                     "img": "/presearch_logo.png",
                     "link": "https://presearchpaper.app.runonflux.io/"
@@ -279,6 +279,12 @@
                     "port": "39870"
                 },
                 {
+                    "game": "Terraria",
+                    "img": "/terraria.png",
+                    "name": "Terraria servers",
+                    "port": "34250, 36735"
+                },
+                {
                     "game": "TeamSpeak",
                     "img": "/TS_logo.png",
                     "name": "ClemTSOnFlux TeamSpeak server",
@@ -289,25 +295,27 @@
                     "img": "/TS_logo.png",
                     "name": "BarinaZona TeamSpeak Server",
                     "port": "34898, 34899, 34900"
-                },
-                {
-                    "game": "Terraria",
-                    "img": "/terraria.png",
-                    "name": "Terraria servers",
-                    "port": "34250, 36735"
                 }
             ]
         },
         {
             "name": "dapps",
             "data": [
-                
+                {
+                    "title": "Tornado Cash Nova",
+                    "img": "/tornado_logo.png",
+                    "link": "https://novatest.app.runonflux.io/"
+                },
+                {
+                    "title": "Paradigm Website",
+                    "img": "/paradigm_logo.png",
+                    "link": "https://paradigm.app.runonflux.io/"
+                },
                 {
                     "title": "DocuShield",
                     "img": "/docuShield_logo.png",
                     "link": "https://docushield.app.runonflux.io/"
                 },
-                
                 {
                     "title": "Keep Token Dashboard",
                     "img": "/KeepToken_logo.png",
@@ -319,7 +327,7 @@
                     "link": "https://sifchainfinance.app.runonflux.io/"
                 },
                 {
-                    "title": "Tornado.cash",
+                    "title": "Tornado cash",
                     "img": "/tornado_logo.png",
                     "link": "https://tornadocash.app.runonflux.io/"
                 },

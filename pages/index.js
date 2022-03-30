@@ -30,6 +30,9 @@ export default function Home(props) {
     last24Percent = ""
   }
 
+  function regexStyleNombres(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  }
 
   return (
     <>
@@ -109,11 +112,11 @@ export default function Home(props) {
                 <Card.Text>
                   <Card.Text>Current Price :  {geckoMarketData.current_price.usd}$</Card.Text>
                   <Card.Text>Last 24h :
-                    {last24Price}{geckoMarketData.price_change_24h_in_currency.usd.toFixed(3)} $
+                    {last24Price} {geckoMarketData.price_change_24h_in_currency.usd.toFixed(3)} $
                     /
                     {last24Percent}{geckoMarketData.price_change_percentage_24h.toFixed(2)} %</Card.Text>
                   <Card.Text>Ath : {geckoMarketData.ath.usd} $</Card.Text>
-                  <Card.Text>MarketCap :{geckoMarketData.market_cap.usd} $</Card.Text>
+                  <Card.Text>MarketCap : {regexStyleNombres(geckoMarketData.market_cap.usd)} $</Card.Text>
                   <Card.Text>MarketCap Rank :{geckoMarketData.market_cap_rank}</Card.Text>
                   <Button className='' style={{ color: '#35C9A5', background: '#333' }} size='lg' href='https://www.coingecko.com/fr/pi%C3%A8ces/flux-zelcash' target='_blank'>@Coingecko</Button>
                 </Card.Text>

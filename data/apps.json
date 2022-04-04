@@ -152,6 +152,11 @@
             "name": "other",
             "data": [
                 {
+                    "title": "White Rabbit",
+                    "img": "/whiteRabbit_logo.png",
+                    "link": "https://whiterabbit.app.runonflux.io/"
+                },
+                {
                     "title": "PreSearch Vision Paper",
                     "img": "/presearch_logo.png",
                     "link": "https://presearchpaper.app.runonflux.io/"
@@ -301,6 +306,21 @@
         {
             "name": "dapps",
             "data": [
+                {
+                    "title": "Cyrusoft PTY LTD",
+                    "img": "/webDev_logo.png",
+                    "link": "https://cyrusoft.app.runonflux.io/"
+                },
+                {
+                    "title": "Mirror",
+                    "img": "/mirror_logo.png",
+                    "link": "https://mirror.app.runonflux.io/"
+                },
+                {
+                    "title": "Dibi Fetch",
+                    "img": "/DibiFetch_logo.png",
+                    "link": "https://dibifetch.app.runonflux.io/"
+                },
                 {
                     "title": "Tornado Cash Nova",
                     "img": "/tornado_logo.png",

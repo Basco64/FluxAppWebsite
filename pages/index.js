@@ -131,7 +131,7 @@ export default function Home(props) {
               <YoutubeAMA />
             </div>
             <div>
-              <a className="twitter-timeline" data-width="700" data-height="800" data-theme="dark" href="https://twitter.com/RunOnFlux?ref_src=twsrc%5Etfw">Click here to be transferred to the RunOnFlux Twitter, or just refresh the page</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <a className="twitter-timeline" data-width="700" data-height="800" data-theme="dark" href="https://twitter.com/RunOnFlux?ref_src=twsrc%5Etfw">Click here to be transferred to the RunOnFlux Twitter, or just refresh the page</a> <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
             </div>
           </div>
         </div>

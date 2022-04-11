@@ -1,9 +1,0 @@
-.a{  
-  color: #F5F5F5;
-  background: radial-gradient(#35C9A5  42.5%, black  100%);
-  }
-
-.a:hover{
-  color: black;
-  background: radial-gradient(white 15%, #35C9A5  100%);
-}

@@ -178,18 +178,16 @@
                 },
                 {
                     "title": "FluxOS",
-                    "creator": null,
                     "img": "/FluxOS_logo_Grey_cube.png",
                     "link": "https://home.runonflux.io/"
                 },
                 {
                     "title": "Flux Block Explorer",
-                    "creator": null,
                     "img": "/flux_logo.png",
                     "link": "https://explorer.app.runonflux.io/"
                 },
                 {
-                    "title": "Flux Node Rank",
+                    "title": "Nodify",
                     "img": "/fluxNode_logo.png",
                     "link": "https://nodify.app.runonflux.io/"
                 },
@@ -298,8 +296,8 @@
                 {
                     "game": "TeamSpeak",
                     "img": "/TS_logo.png",
-                    "name": "BarinaZona TeamSpeak Server",
-                    "port": "34898, 34899, 34900"
+                    "name": "Barin TeamSpeak Server",
+                    "port": "34989, 34899, 34900"
                 }
             ]
         },

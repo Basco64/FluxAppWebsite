@@ -1,0 +1,7 @@
+.imgCarre{
+    clip-path:ellipse(50% 50%)
+}
+
+.imgRectangle{
+    clip-path:ellipse(33% 50%)
+}

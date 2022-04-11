@@ -13,4 +13,9 @@ html{
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   padding-bottom: 1em;
   height: 100%;
+  width: 100%;
+}
+
+a{
+  text-decoration:double;
 }

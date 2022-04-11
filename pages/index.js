@@ -7,8 +7,8 @@ import Button from 'react-bootstrap/Button'
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
 import styles from '../styles/Home.module.css'
-import YoutubeAMA from '../components/Youtube/YoutubeAMA';
 import YoutubeHome from '../components/Youtube/YoutubeHome';
+import { Text } from '@chakra-ui/react'
 
 
 export default function Home(props) {
@@ -38,13 +38,13 @@ export default function Home(props) {
     <>
       <div className='body'>
         <Head>
-          <title>All dApps</title>
+          <title>Welcome in the Flux Community</title>
         </Head>
         <Header />
-        <h1 className='text-center m-5 p-2'>Welcome in the Flux Community World</h1>
+        <Text fontSize='6xl' className='text-center  m-5 p-2' style={{ fontWeight: 'bold', textDecoration: 'underline' }} >Welcome in the Flux Community World !!!</Text>
         <div className={styles.cartes}>
           <div className='col-4'>
-            <Card style={{ width: '16rem' }}>
+            <Card style={{ width: '16rem' }} className='border-dark'>
               <Card.Img variant="top" src="/NodeCard_logo.png" />
               <Card.Body style={{ color: 'black' }}>
                 <Card.Title className='text-center'>Node Status </Card.Title>
@@ -52,57 +52,19 @@ export default function Home(props) {
                 <Card.Text>Cumulus :  {fluxAPI['cumulus-enabled']} </Card.Text>
                 <Card.Text>Nimbus : {fluxAPI['nimbus-enabled']} </Card.Text>
                 <Card.Text>Stratus : {fluxAPI['stratus-enabled']} </Card.Text>
-                <Card.Text>Titan : Soon </Card.Text>
               </Card.Body>
             </Card>
           </div>
           <div className='col-4'>
-            <h3 className='text-center' style={{ textDecoration: "underline" }} > Trade Flux Today !</h3>
-            <Tabs
-              defaultActiveKey="USDT"
-              id="tab"
-              className="mb-3"
-              variant='pills'
-            >
-              <Tab eventKey="USDT" title="Flux/USDT" >
-                <div className={styles.boutons}>
-                  <Button variant='dark' href="https://www.binance.com/en/trade/FLUX_USDT"> Binance </Button>
-                  <Button variant='dark' href="https://www.gate.io/fr/trade/FLUX_USDT" > Gate.io </Button>
-                  <Button variant='dark' href="https://www.kucoin.com/fr/trade/FLUX-USDT" > Kucoin </Button>
-                  <Button variant='dark' href="https://www.mexc.com/exchange/FLUX1_USDT" > MEXC Global </Button>
-                  <Button variant='dark' href="https://www.digifinex.com/en-ww/trade/USDT/FLUX" > Digifinex </Button>
-                  <Button variant='dark' href="https://bingx.com/en-us/spot/FLUXUSDT/" > BingX </Button>
-                  <Button variant='dark' href="https://www.coinex.com/exchange?currency=USDT&dest=FLUX#spot" > CoinEx </Button>
-                  <Button variant='dark' href="https://www.bkex.com/#/trade/FLUX_USDT" > BKEX </Button>
-                  <Button variant='dark' href="https://global.bittrex.com/Market/Index?MarketName=USDT-FLUX" > Hotbit </Button>
-                  <Button variant='dark' href="https://global.bittrex.com/Market/Index?MarketName=USDT-FLUX" > Bittrex </Button>
-                  <Button variant='dark' href="https://app.stex.com/en/trading/pair/USDT/FLUX/1D" > STEX </Button>
-                  <Button variant='dark' href="https://hitbtc.com/flux-to-usdt" > HitBTC </Button>
-                </div>
-              </Tab>
+            <Text fontSize='xl' className='text-center m-5 p-2' style={{fontWeight:'bold'}}>
+              Hi all and welcome <br />
+              I'm Basco, proud member of the FluxArmy! <br />
+              I created this site for the FluxArmy members or even just people who land here by chance and know as much as possible about the Flux network.<br />
 
-              <Tab eventKey="BTC" title="Flux/BTC">
-                <div className={styles.boutons}>
-                  <Button variant='dark' href="https://www.binance.com/en/trade/FLUX_BTC" > Binance </Button>
-                  <Button variant='dark' href="https://www.kucoin.com/fr/trade/FLUX-BTC" > KuCoin </Button>
-                  <Button variant='dark' href="https://tradeogre.com/exchange/BTC-FLUX" > TradeOgre </Button>
-                  <Button variant='dark' href="https://www.coinex.com/exchange?currency=BTC&dest=FLUX#spot" > CoinEx </Button>
-                  <Button variant='dark' href="https://app.stex.com/en/trading/pair/BTC/FLUX/1D" > STEX </Button>
-                  <Button variant='dark' href="https://www.hotbit.io/exchange?symbol=FLUX_BTC" > Hotbit </Button>
-                  <Button variant='dark' href="https://www.kucoin.com/fr/trade/FLUX-BTC" > KuCoin </Button>
-                </div>
-              </Tab>
-
-              <Tab eventKey="OTHER" title="Other pairs">
-                <div className={styles.boutons}>
-                  <Button variant='dark' href="https://www.gate.io/fr/trade/FLUX_ETH" > Gate.io Flux/ETH </Button>
-                  <Button variant='dark' href="https://go.coinmetro.com/express/buy/FLUX/USD" > Coinmetro Flux/USD </Button>
-                  <Button variant='dark' href="https://go.coinmetro.com/express/buy/FLUX/EUR" > Coinmetro Flux/EUR </Button>
-                  <Button variant='dark' href="https://www.hotbit.io/exchange?symbol=FLUX_ETH" > Hotbit Flux/ETH </Button>
-                  <Button variant='dark' href="https://www.binance.com/en/trade/FLUX_BUSD" > Binance Flux/BUSD </Button>
-                </div>
-              </Tab>
-            </Tabs>
+              I am a beginner so the appearance of the site can be disturbing,
+              constructive criticism is greatly appreciated, <br />
+              do not hesitate to dm me on discord: Basco#6472
+            </Text>
           </div>
           <div className='col-4'>
             <Card style={{ width: '16rem' }}>
@@ -112,7 +74,7 @@ export default function Home(props) {
                 <Card.Text>
                   <Card.Text>Current Price :  {geckoMarketData.current_price.usd}$</Card.Text>
                   <Card.Text>Last 24h :
-                    {last24Price} {geckoMarketData.price_change_24h_in_currency.usd.toFixed(3)} $
+                    {last24Price} {geckoMarketData.price_change_24h_in_currency.usd.toFixed(2)} $
                     /
                     {last24Percent}{geckoMarketData.price_change_percentage_24h.toFixed(2)} %</Card.Text>
                   <Card.Text>Ath : {geckoMarketData.ath.usd} $</Card.Text>
@@ -124,18 +86,55 @@ export default function Home(props) {
             </Card>
           </div>
         </div>
-        <div className='pt-5 pb-5 text-center'>
-          <div className={styles.cartes}>
-            <div style={{ textDecoration: "underline", color: "#2b61d1" }}>
-              <h1>Last AMA</h1>
-              <YoutubeAMA />
-            </div>
-            <div>
-              <a className="twitter-timeline" data-width="700" data-height="800" data-theme="dark" href="https://twitter.com/RunOnFlux?ref_src=twsrc%5Etfw">Click here to be transferred to the RunOnFlux Twitter, or just refresh the page</a> <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
-            </div>
-          </div>
+        <div className='col-4 mb-5 mt-5'>
+          <Text fontSize='3xl' className='text-center' style={{ fontWeight: 'bold', textDecoration: 'underline' }} >Trade Flux Today !</Text>
+          <Tabs
+            defaultActiveKey="USDT"
+            id="tab"
+            className="mb-3"
+            variant='pills'
+          >
+            <Tab eventKey="USDT" title="Flux/USDT" >
+              <div className={styles.boutons}>
+                <Button variant='dark' href="https://www.binance.com/en/trade/FLUX_USDT"> Binance </Button>
+                <Button variant='dark' href="https://www.gate.io/fr/trade/FLUX_USDT" > Gate.io </Button>
+                <Button variant='dark' href="https://www.kucoin.com/fr/trade/FLUX-USDT" > Kucoin </Button>
+                <Button variant='dark' href="https://www.mexc.com/exchange/FLUX1_USDT" > MEXC Global </Button>
+                <Button variant='dark' href="https://www.digifinex.com/en-ww/trade/USDT/FLUX" > Digifinex </Button>
+                <Button variant='dark' href="https://bingx.com/en-us/spot/FLUXUSDT/" > BingX </Button>
+                <Button variant='dark' href="https://www.coinex.com/exchange?currency=USDT&dest=FLUX#spot" > CoinEx </Button>
+                <Button variant='dark' href="https://www.bkex.com/#/trade/FLUX_USDT" > BKEX </Button>
+                <Button variant='dark' href="https://global.bittrex.com/Market/Index?MarketName=USDT-FLUX" > Hotbit </Button>
+                <Button variant='dark' href="https://global.bittrex.com/Market/Index?MarketName=USDT-FLUX" > Bittrex </Button>
+                <Button variant='dark' href="https://app.stex.com/en/trading/pair/USDT/FLUX/1D" > STEX </Button>
+                <Button variant='dark' href="https://hitbtc.com/flux-to-usdt" > HitBTC </Button>
+              </div>
+            </Tab>
+
+            <Tab eventKey="BTC" title="Flux/BTC">
+              <div className={styles.boutons}>
+                <Button variant='dark' href="https://www.binance.com/en/trade/FLUX_BTC" > Binance </Button>
+                <Button variant='dark' href="https://www.kucoin.com/fr/trade/FLUX-BTC" > KuCoin </Button>
+                <Button variant='dark' href="https://tradeogre.com/exchange/BTC-FLUX" > TradeOgre </Button>
+                <Button variant='dark' href="https://www.coinex.com/exchange?currency=BTC&dest=FLUX#spot" > CoinEx </Button>
+                <Button variant='dark' href="https://app.stex.com/en/trading/pair/BTC/FLUX/1D" > STEX </Button>
+                <Button variant='dark' href="https://www.hotbit.io/exchange?symbol=FLUX_BTC" > Hotbit </Button>
+                <Button variant='dark' href="https://www.kucoin.com/fr/trade/FLUX-BTC" > KuCoin </Button>
+              </div>
+            </Tab>
+
+            <Tab eventKey="OTHER" title="Other pairs">
+              <div className={styles.boutons}>
+                <Button variant='dark' href="https://www.gate.io/fr/trade/FLUX_ETH" > Gate.io Flux/ETH </Button>
+                <Button variant='dark' href="https://go.coinmetro.com/express/buy/FLUX/USD" > Coinmetro Flux/USD </Button>
+                <Button variant='dark' href="https://go.coinmetro.com/express/buy/FLUX/EUR" > Coinmetro Flux/EUR </Button>
+                <Button variant='dark' href="https://www.hotbit.io/exchange?symbol=FLUX_ETH" > Hotbit Flux/ETH </Button>
+                <Button variant='dark' href="https://www.binance.com/en/trade/FLUX_BUSD" > Binance Flux/BUSD </Button>
+              </div>
+            </Tab>
+          </Tabs>
         </div>
-        <div className='pb-5'>
+        <div className='pb-5 pt-5'>
           <YoutubeHome />
         </div>
       </div>

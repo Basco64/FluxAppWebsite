@@ -1,10 +1,10 @@
-import Footer from '../../../components/Footers/Footer';
 import Head from 'next/head'
-import Header from '../../../components/Header/Header';
 import Image from 'next/image'
+import LinkNext from 'next/link'
 import firstStep from './firstStep.png'
 import secondStep from './secondStep.png'
-import LinkNext from 'next/link'
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footers/Footer';
 import YoutubeApp from '../../../components/Youtube/YoutubeApp'
 import { Text, Link, Heading, Box, Stack } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
@@ -51,6 +51,7 @@ export default function deployApp() {
               alt="firstStep"
               placeholder='blur'
             />
+            <br />
             The cost is based on CPU/RAM/SSD allotments that you set for your application. For a simple webpage, the minimum 0.1 CPU / 100 RAM / 1 SSD is sufficient.
             <Image src={secondStep}
               alt="firstStep"

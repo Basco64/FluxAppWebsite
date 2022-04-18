@@ -1,8 +1,8 @@
 import React from "react";
 import YouTube from "react-youtube";
-import styles from '../youtubenode.module.css'
+import { Box } from '@chakra-ui/react'
 
-export default class YoutubeHome
+export default class Setup3Fr
 	extends React.Component {
 	render() {
 		const opts = {
@@ -14,12 +14,12 @@ export default class YoutubeHome
 		};
 
 		return (
-			<div className={styles.video}>
+			<Box my='1.5rem'>
 				<YouTube
 					videoId="vZI3_-Nv1ls"
 					opts={opts}
 				/>
-			</div>
+			</Box>
 		);
 	}
 

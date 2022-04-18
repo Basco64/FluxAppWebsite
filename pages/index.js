@@ -1,14 +1,8 @@
-import Footer from '../components/Footers/Footer';
 import Head from 'next/head'
 import Header from '../components/Header/Header';
-import React from 'react'
-import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Button'
-import Tabs from 'react-bootstrap/Tabs'
-import Tab from 'react-bootstrap/Tab'
-import styles from '../styles/Home.module.css'
-import YoutubeHome from '../components/Youtube/YoutubeHome';
-import { Text } from '@chakra-ui/react'
+import { Text, Box, useColorModeValue, Heading, Stack, Image, Button, Flex, AspectRatio } from '@chakra-ui/react'
+import TabTradeFlux from '../components/Tabs/TabTradeFlux';
+import Footer from '../components/Footers/Footer';
 
 
 export default function Home(props) {
@@ -30,114 +24,161 @@ export default function Home(props) {
     last24Percent = ""
   }
 
-  function regexStyleNombres(x) {
+  function regexStyleNombresVirgule(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  }
+
+  function regexStyleNombresEspace(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
   }
 
   return (
     <>
-      <div className='body'>
-        <Head>
-          <title>Welcome in the Flux Community</title>
-        </Head>
-        <Header />
-        <Text fontSize='6xl' className='text-center  m-5 p-2' style={{ fontWeight: 'bold', textDecoration: 'underline' }} >Welcome in the Flux Community World !!!</Text>
-        <div className={styles.cartes}>
-          <div className='col-4'>
-            <Card style={{ width: '16rem' }} className='border-dark'>
-              <Card.Img variant="top" src="/NodeCard_logo.png" />
-              <Card.Body style={{ color: 'black' }}>
-                <Card.Title className='text-center'>Node Status </Card.Title>
-                <Card.Text >Total Nodes : {fluxAPI.total} </Card.Text>
-                <Card.Text>Cumulus :  {fluxAPI['cumulus-enabled']} </Card.Text>
-                <Card.Text>Nimbus : {fluxAPI['nimbus-enabled']} </Card.Text>
-                <Card.Text>Stratus : {fluxAPI['stratus-enabled']} </Card.Text>
-              </Card.Body>
-            </Card>
-          </div>
-          <div className='col-4'>
-            <Text fontSize='xl' className='text-center m-5 p-2' style={{fontWeight:'bold'}}>
-              Hi all and welcome <br />
-              I'm Basco, proud member of the FluxArmy! <br />
-              I created this site for the FluxArmy members or even just people who land here by chance and know as much as possible about the Flux network.<br />
+      <Head>
+        <title>Welcome in the Flux Community</title>
+      </Head>
+      <Header />
+      <Heading as='h1' fontSize={{ base: "2xl", lg: "6xl" }} align={'center'} mb={10} fontWeight={'bold'} textDecoration={'underline'} >Welcome in the Flux Community World !!!</Heading >
 
-              I am a beginner so the appearance of the site can be disturbing,
-              constructive criticism is greatly appreciated, <br />
-              do not hesitate to dm me on discord: Basco#6472
-            </Text>
-          </div>
-          <div className='col-4'>
-            <Card style={{ width: '16rem' }}>
-              <Card.Img variant="top" src="/FluxCard_logo.png" style={{ width: '4rem' }} />
-              <Card.Body style={{ color: 'black' }}>
-                <Card.Title className='text-center'>Flux Token</Card.Title>
-                <Card.Text>
-                  <Card.Text>Current Price :  {geckoMarketData.current_price.usd}$</Card.Text>
-                  <Card.Text>Last 24h :
-                    {last24Price} {geckoMarketData.price_change_24h_in_currency.usd.toFixed(2)} $
-                    /
-                    {last24Percent}{geckoMarketData.price_change_percentage_24h.toFixed(2)} %</Card.Text>
-                  <Card.Text>Ath : {geckoMarketData.ath.usd} $</Card.Text>
-                  <Card.Text>MarketCap : {regexStyleNombres(geckoMarketData.market_cap.usd)} $</Card.Text>
-                  <Card.Text>MarketCap Rank :{geckoMarketData.market_cap_rank}</Card.Text>
-                  <Button className='' style={{ color: '#35C9A5', background: '#333' }} size='lg' href='https://www.coingecko.com/fr/pi%C3%A8ces/flux-zelcash' target='_blank'>@Coingecko</Button>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </div>
-        </div>
-        <div className='col-4 mb-5 mt-5'>
-          <Text fontSize='3xl' className='text-center' style={{ fontWeight: 'bold', textDecoration: 'underline' }} >Trade Flux Today !</Text>
-          <Tabs
-            defaultActiveKey="USDT"
-            id="tab"
-            className="mb-3"
-            variant='pills'
+      {/* Card Node */}
+
+      <Flex direction={{ base: "column", md: "column", lg: "row" }}>
+        <Stack w={{ base: "33vh", lg: "33%" }}>
+          <Box
+            role={'group'}
+            pb={6}
+            maxW={'17rem'}
+            bg={useColorModeValue('#d0d0d0', '#29292a')}
+            rounded={'lg'}
           >
-            <Tab eventKey="USDT" title="Flux/USDT" >
-              <div className={styles.boutons}>
-                <Button variant='dark' href="https://www.binance.com/en/trade/FLUX_USDT"> Binance </Button>
-                <Button variant='dark' href="https://www.gate.io/fr/trade/FLUX_USDT" > Gate.io </Button>
-                <Button variant='dark' href="https://www.kucoin.com/fr/trade/FLUX-USDT" > Kucoin </Button>
-                <Button variant='dark' href="https://www.mexc.com/exchange/FLUX1_USDT" > MEXC Global </Button>
-                <Button variant='dark' href="https://www.digifinex.com/en-ww/trade/USDT/FLUX" > Digifinex </Button>
-                <Button variant='dark' href="https://bingx.com/en-us/spot/FLUXUSDT/" > BingX </Button>
-                <Button variant='dark' href="https://www.coinex.com/exchange?currency=USDT&dest=FLUX#spot" > CoinEx </Button>
-                <Button variant='dark' href="https://www.bkex.com/#/trade/FLUX_USDT" > BKEX </Button>
-                <Button variant='dark' href="https://global.bittrex.com/Market/Index?MarketName=USDT-FLUX" > Hotbit </Button>
-                <Button variant='dark' href="https://global.bittrex.com/Market/Index?MarketName=USDT-FLUX" > Bittrex </Button>
-                <Button variant='dark' href="https://app.stex.com/en/trading/pair/USDT/FLUX/1D" > STEX </Button>
-                <Button variant='dark' href="https://hitbtc.com/flux-to-usdt" > HitBTC </Button>
-              </div>
-            </Tab>
+            <Box
+              rounded={'lg'}
+              height={'200px'}
+            >
+              <Image
+                rounded={'lg'}
+                height={200}
+                width={282}
+                objectFit={'cover'}
+                src={'/logo/NodeCard_logo.png'}
+              />
+            </Box>
+            <Stack pt={6} align={'center'}>
+              <Heading>Node Status</Heading>
+              <Text color={useColorModeValue('black', 'gray.500')} fontSize={'sm'} textTransform={'uppercase'}>
+                Total Nodes : {regexStyleNombresEspace(fluxAPI.total)}
+              </Text>
+              <Text color={useColorModeValue('black', 'gray.500')} fontSize={'sm'} textTransform={'uppercase'}>
+                Cumulus :  {regexStyleNombresEspace(fluxAPI['cumulus-enabled'])}
+              </Text>
+              <Text color={useColorModeValue('black', 'gray.500')} fontSize={'sm'} textTransform={'uppercase'}>
+                Nimbus : {regexStyleNombresEspace(fluxAPI['nimbus-enabled'])}
+              </Text>
+              <Text color={useColorModeValue('black', 'gray.500')} fontSize={'sm'} textTransform={'uppercase'}>
+                Stratus : {regexStyleNombresEspace(fluxAPI['stratus-enabled'])}
+              </Text>
+            </Stack>
+          </Box>
+        </Stack >
 
-            <Tab eventKey="BTC" title="Flux/BTC">
-              <div className={styles.boutons}>
-                <Button variant='dark' href="https://www.binance.com/en/trade/FLUX_BTC" > Binance </Button>
-                <Button variant='dark' href="https://www.kucoin.com/fr/trade/FLUX-BTC" > KuCoin </Button>
-                <Button variant='dark' href="https://tradeogre.com/exchange/BTC-FLUX" > TradeOgre </Button>
-                <Button variant='dark' href="https://www.coinex.com/exchange?currency=BTC&dest=FLUX#spot" > CoinEx </Button>
-                <Button variant='dark' href="https://app.stex.com/en/trading/pair/BTC/FLUX/1D" > STEX </Button>
-                <Button variant='dark' href="https://www.hotbit.io/exchange?symbol=FLUX_BTC" > Hotbit </Button>
-                <Button variant='dark' href="https://www.kucoin.com/fr/trade/FLUX-BTC" > KuCoin </Button>
-              </div>
-            </Tab>
+        {/* Presentation Text */}
 
-            <Tab eventKey="OTHER" title="Other pairs">
-              <div className={styles.boutons}>
-                <Button variant='dark' href="https://www.gate.io/fr/trade/FLUX_ETH" > Gate.io Flux/ETH </Button>
-                <Button variant='dark' href="https://go.coinmetro.com/express/buy/FLUX/USD" > Coinmetro Flux/USD </Button>
-                <Button variant='dark' href="https://go.coinmetro.com/express/buy/FLUX/EUR" > Coinmetro Flux/EUR </Button>
-                <Button variant='dark' href="https://www.hotbit.io/exchange?symbol=FLUX_ETH" > Hotbit Flux/ETH </Button>
-                <Button variant='dark' href="https://www.binance.com/en/trade/FLUX_BUSD" > Binance Flux/BUSD </Button>
-              </div>
-            </Tab>
-          </Tabs>
-        </div>
-        <div className='pb-5 pt-5'>
-          <YoutubeHome />
-        </div>
-      </div>
+        <Stack w={{ base: "100%", lg: "33%" }}>
+          <Text fontSize='xl' align='center' pt={"2em"} fontWeight='bold'>
+            Hi all and welcome <br />
+            I'm Basco, proud member of the FluxArmy!
+          </Text>
+          <Text fontSize='xl' align='center' p={'2em'} fontWeight='bold'>
+            I created this site for the FluxArmy members or even just people who land here by chance and know as much as possible about the Flux network.
+          </Text>
+          <Text fontSize='xl' align='center' pb={'1em'} fontWeight='bold'>
+            I am a beginner so the appearance of the site can be disturbing,
+            constructive criticism is greatly appreciated,
+            don't hesitate to dm me on discord: Basco#6472 .
+          </Text>
+        </Stack>
+
+        {/* Card Flux Token */}
+        
+        <Stack w={{ base: "33vh", lg: "33%" }}>
+          <Box
+            role={'group'}
+            p={6}
+            maxW={'17rem'}
+            bg={useColorModeValue('#d0d0d0', '#29292a')}
+            rounded={'lg'}
+          >
+            <Box
+              rounded={'lg'}
+              height={'130px'}
+            >
+              <Image
+                rounded={'lg'}
+                height={120}
+                width={120}
+                objectFit={'cover'}
+                src={"/logo/fluxnext.svg"}
+              />
+            </Box>
+            <Stack align={'center'}>
+              <Heading>Flux Token</Heading>
+              <Text color={useColorModeValue('black', 'gray.500')} fontSize={'sm'} textTransform={'uppercase'}>
+                Current Price :  {geckoMarketData.current_price.usd}$
+              </Text>
+              <Text color={useColorModeValue('black', 'gray.500')} fontSize={'sm'} textTransform={'uppercase'}>
+                Last 24h :
+                {last24Price} {geckoMarketData.price_change_24h_in_currency.usd.toFixed(2)} $
+                /
+                {last24Percent}{geckoMarketData.price_change_percentage_24h.toFixed(2)} %
+              </Text>
+              <Text color={useColorModeValue('black', 'gray.500')} fontSize={'sm'} textTransform={'uppercase'}>
+                Ath : {geckoMarketData.ath.usd} $
+              </Text>
+              <Text color={useColorModeValue('black', 'gray.500')} fontSize={'sm'} textTransform={'uppercase'}>
+                MarketCap : {regexStyleNombresVirgule(geckoMarketData.market_cap.usd)} $
+              </Text>
+              <Text color={useColorModeValue('black', 'gray.500')} fontSize={'sm'} textTransform={'uppercase'}>
+                MarketCap Rank :{geckoMarketData.market_cap_rank}
+              </Text>
+              <Button
+                as="a"
+                href='https://www.coingecko.com/fr/pi%C3%A8ces/flux-zelcash'
+                bg={'#333'}
+                color={'#35C9A5'}
+                size='md'
+                target='_blank'
+                _hover={{
+                  color: '#35C9A5',
+                  bg: '#171717'
+                }}
+              >@Coingecko
+              </Button>
+            </Stack>
+          </Box>
+        </Stack>
+      </Flex>
+
+      {/* Tab Trade Flux */}
+
+      <Stack w={{ base: "100%", lg: "33%" }} pb={5} pt={5}>
+        <Text fontSize='3xl' align={'center'} fontWeight='bold' textDecoration='underline' >Trade Flux Today !</Text>
+        <TabTradeFlux />
+      </Stack>
+
+      {/* Youtube Home */}
+
+      <Stack pb={'4rem'} pt={'1rem'}>
+        <AspectRatio
+          w={{ base: "98%", lg: "640px" }}
+          h={{ base: "100%", lg: "360px" }}
+        >
+          <iframe
+            title='YoutubeHome'
+            src='https://www.youtube.com/embed/GJVk_LfASxk'
+            allowFullScreen
+          />
+        </AspectRatio>
+      </Stack>
       <Footer />
     </>
   )

@@ -2,7 +2,6 @@ import Footer from '../../components/Footers/Footer';
 import Head from 'next/head'
 import Header from '../../components/Header/Header';
 import YoutubeAMA from '../../components/Youtube/YoutubeAMA';
-import styles from '../../styles/Home.module.css'
 
 
 export default function news(props) {
@@ -17,7 +16,7 @@ export default function news(props) {
         <Header />
         <div className="mx-auto">
           <div className='pt-5 pb-5 text-center'>
-            <div className={styles.cartes}>
+            <div >
               <div style={{ textDecoration: "underline", color: "#2b61d1" }} className='fw-bold'>
                 <h1>Last AMA</h1>
                 <YoutubeAMA />

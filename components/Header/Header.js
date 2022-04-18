@@ -1,26 +1,25 @@
 import React from 'react'
 import NavBar from '../Navbar/Navbar'
-import Image from 'next/image'
-import img1 from './FluxBanner2.png'
-import styles from './header.module.css'
+import { Box, Image } from '@chakra-ui/react'
 
 export default function Header() {
 
     return (
         <>
-            <div className={styles.wrapper}>
-                <div className='col-6'>
-                    <div className={styles.imageContainer}>
-                        <Image
-                            src={img1}
-                            alt="fluxBanner"
-                            placeholder='blur'
-                            width={840}
-                            height={385}
-                        />
-                    </div>
-                </div>
-            </div>
+            <Box
+                align='center'
+                style={{ clear: 'both' }}
+            >
+                <Image
+                    src='/FluxBanner.png'
+                    alt="fluxBanner"
+                    placeholder='blur'
+                    width={{ base: "100%", lg: "840px" }}
+                    height={{ base: "100%", lg: "385px" }}
+                    borderRadius={'5em'}
+                    boxShadow={'black 1em 1em 0.6em'}
+                />
+            </Box>
             <NavBar />
         </>
     )

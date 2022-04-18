@@ -1,7 +1,5 @@
 import '../styles/globals.css'
 import Head from 'next/head'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 import { SSRProvider } from 'react-bootstrap';
 import { ChakraProvider } from '@chakra-ui/react'
 import theme from '../components/ToggleDarkLight/theme'
@@ -16,7 +14,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
       <Head>
-        <meta name="viewport" content="viewport-fit=cover" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86" />
       </Head>
       <ToggleDarkLight />
       <SSRProvider>

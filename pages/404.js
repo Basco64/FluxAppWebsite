@@ -12,16 +12,15 @@ export default function quatreCentQuatre() {
                     <title>Page not Found</title>
                 </Head>
                 <NavBar />
-                <div className='container pb-5'>
-                    <Image
-                        src={img}
-                        alt="ICPisBad"
-                        placeholder='blur'
-                        objectFit='contain'
-                        width={1280}
-                        height={720}
-                    />
-                </div>
+                <Image
+                    className='container pb-5'
+                    src={img}
+                    alt="ICPisBad"
+                    placeholder='blur'
+                    objectFit='contain'
+                    width={1920}
+                    height={720}
+                />
             </div>
             <Footer />
         </>

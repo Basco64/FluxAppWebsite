@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import { CloseIcon } from '@chakra-ui/icons'
-import styles from './code.module.css'
+import { Box, Code, Center, Heading } from '@chakra-ui/react'
 
 export default function next() {
     return (
@@ -10,12 +10,12 @@ export default function next() {
             <Head>
                 <title>Dockerfile for NextJS App</title>
             </Head>
-            <div className='body'>
-                <div>
-                <Link href="/deploy/app/" passHref scroll={false}><CloseIcon className={styles.pos}></CloseIcon></Link>
-                </div>
-                <div>
-                    <div className='p-2 mt-5' style={{ border: '2px solid', width: '80vh' }}>
+            <Link href="/deploy/app/" passHref scroll={false}>
+                <CloseIcon m='1em' mr='2em' style={{ float: 'right', clear: 'both' }} _hover={{ 'cursor': 'pointer' }} /></Link>
+            <Heading size='2xl' align='center' my='10' textDecoration='underline'>Dockerfile for NextJS App</Heading>
+            <Center>
+                <Box p='2' m='5'>
+                    <Code>
                         FROM node:16-alpine AS deps <br />
                         RUN apk add --no-cache libc6-compat<br />
                         WORKDIR /app<br />
@@ -52,9 +52,9 @@ export default function next() {
                         ENV PORT 3000<br />
                         <br />
                         CMD ["node", "server.js"]
-                    </div>
-                </div>
-            </div>
+                    </Code>
+                </Box>
+            </Center>
         </>
     )
 }

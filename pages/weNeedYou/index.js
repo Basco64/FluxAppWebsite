@@ -55,9 +55,9 @@ export default function WeNeedYou() {
     return (
         <>
             <Head>
-                <title>We Need You!</title>
-            </Head>
-            <Header />
+                <title>We Need You!</title> 
+            </Head> 
+            <Header /> 
             <Heading as='h1' fontSize={{ base: "2xl", lg: "4xl" }} align={'center'} mb={10} fontWeight={'bold'} >Your Opinion Counts !!!</Heading >
             <Text as='h4' fontSize={{ base: "md", lg: "xl" }} align={'center'}>Feel free to give ideas for improvement for this site or even sites/games you would like to see on the Flux network</Text>
             <Stack mt='5em' mb='2em'>

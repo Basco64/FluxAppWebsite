@@ -21,6 +21,11 @@ export default function FlagsCountry() {
                         <Image src='/flag/ArmyColombia.jpg' style={{ clipPath: 'ellipse(50% 50%' }} width={'100px'} alt="ArmyColombia" />
                     </Link>
                 </Box>
+                <Box >
+                    <Link href='https://mobile.twitter.com/fluxcasanay' target='_blank'>
+                        <Image src='/flag/armyCasanay.jpg' style={{ clipPath: 'ellipse(50% 50%' }} width={'100px'} alt="ArmyCasanay.jpg" />
+                    </Link>
+                </Box>
             </SimpleGrid>
             {/* <Box className='row no-gutters mx-auto mb-5'>
                 <Box className='col-4'>

@@ -4,6 +4,7 @@ import Dapps from './NavButtons/Dapps';
 import FluxArmy from './NavButtons/FluxArmy';
 import News from './NavButtons/News';
 import BuildFlux from './NavButtons/BuildFlux';
+import Improve from './NavButtons/Improve';
 import { Flex, IconButton, useColorModeValue } from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 
@@ -15,7 +16,7 @@ export default function NavBar() {
     <Flex>
       <Flex
         py={10}
-        direction={{ base: 'column', md: 'row'}}
+        direction={{ base: 'column', md: 'row' }}
         align="center"
       >
         {/* Desktop */}
@@ -28,6 +29,7 @@ export default function NavBar() {
           <Dapps />
           <FluxArmy />
           <BuildFlux />
+          <Improve />
         </Flex>
 
         {/* Mobile */}
@@ -35,6 +37,7 @@ export default function NavBar() {
           aria-label="Open Menu"
           size="lg"
           mr={2}
+          style={{ float: 'left' }}
           icon={
             <HamburgerIcon />
           }
@@ -47,7 +50,7 @@ export default function NavBar() {
 
       <Flex
         display={display}
-        bgColor={useColorModeValue('#f7f7f7', '#212121')}
+        bgColor={useColorModeValue('transparent')}
         flexDir="column"
       >
         <Flex justify="flex-end">
@@ -72,6 +75,7 @@ export default function NavBar() {
           <Dapps />
           <FluxArmy />
           <BuildFlux />
+          <Improve />
         </Flex>
 
       </Flex>

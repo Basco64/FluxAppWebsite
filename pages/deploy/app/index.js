@@ -22,15 +22,22 @@ export default function deployApp() {
         <Heading fontSize='5xl' align='center' my='3' fontWeight='bold' >You want deploy an app on the Flux network?</Heading>
         <Text fontSize='xl' align='center' my='5' textDecoration='underline'>Nothing's easier, follow this little guide and your app will be online really quickly!</Text>
         <Stack w='90%'>
-          <Text noOfLines={{ base: '2', md: '1' }} my='5'>
-            Requirements : WSL2(Windows), Shell, Docker, Zelcore.
-          </Text>
+          <Box>
+            <Text noOfLines={{ base: '2', md: '1' }} my='5'>
+              Requirements : WSL2(Windows), Shell, Docker, Zelcore.
+            </Text>
+          </Box>
+          <Box>
+            <Link href='https://runonflux.io/dapp-guide.html' isExternal>
+              Official Documentation <ExternalLinkIcon mx='2px' />
+            </Link>
+          </Box>
           <Heading fontWeight='bold' size='md' my='5'> 1. Create and build your app.</Heading>
           <Box my='5'>
             <Heading fontWeight='bold' size='md' my='5'> 2. Build your image and push it in Docker. </Heading>
             If you're struggling with dockerfiles, here are a few: <br />
-            <LinkNext href="/deploy/app/next" passHref scroll={false}>For NextJS App</LinkNext><br />
-            <LinkNext href="/deploy/app/node" passHref scroll={false}>For Node App</LinkNext>
+            <LinkNext href="/deploy/app/next" passHref scroll={false}>For NextJS App</LinkNext><ExternalLinkIcon mx='2px' /><br />
+            <LinkNext href="/deploy/app/node" passHref scroll={false}>For Node App</LinkNext><ExternalLinkIcon mx='2px' />
           </Box>
           <Box my='5'>
             <Heading fontWeight='bold' size='md' my='5'> 3. Whitelist your app on Github: </Heading>
@@ -52,7 +59,7 @@ export default function deployApp() {
               placeholder='blur'
             />
             <br />
-            The cost is based on CPU/RAM/SSD allotments that you set for your application. For a simple webpage, the minimum 0.1 CPU / 100 RAM / 1 SSD is sufficient.
+            <Text my='5'>The cost is based on CPU/RAM/SSD allotments that you set for your application. For a simple webpage, the minimum 0.1 CPU / 100 RAM / 1 SSD is sufficient.</Text>
             <Image src={secondStep}
               alt="firstStep"
               placeholder='blur'
@@ -62,12 +69,7 @@ export default function deployApp() {
           <Heading fontWeight='bold' size='md' my='10'> 5. WELL DONE! YOUR APP IS ONLINE, WELCOME TO THE FLUX NETWORK!! </Heading>
         </Stack>
       </Box>
-      <Box mb='5' align='center'>
-        <Box mb='4'>
-          <Link href='https://runonflux.io/dapp-guide.html' isExternal>
-            Official Documentation <ExternalLinkIcon mx='2px' />
-          </Link>
-        </Box>
+      <Box my='5' align='center'>
         <Box>
           <YoutubeApp />
         </Box>

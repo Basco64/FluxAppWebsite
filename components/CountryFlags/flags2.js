@@ -127,6 +127,11 @@ export default function FlagsCountry() {
                         <Image src='https://media.istockphoto.com/vectors/flag-of-cambodia-glass-icon-square-shape-vector-id492807600?k=6&m=492807600&s=170667a&w=0&h=5TwbYXK2GcNPjdM5TYlntlVFk8VpRIDTLBW-WOXZQZ0=' style={{ clipPath: 'ellipse(50% 50%' }} width={'100px'} alt="Cambodge" />
                     </Link>
                 </Box>
+                <Box >
+                    <Link href='https://mobile.twitter.com/fluxpersian' target="_blank">
+                        <Image src='/flag/fluxPersian.jpg' style={{ clipPath: 'ellipse(50% 50%' }} width={'100px'} alt="fluxpersian" />
+                    </Link>
+                </Box>
             </SimpleGrid>
         </>
     )

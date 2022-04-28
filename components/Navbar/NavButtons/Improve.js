@@ -22,7 +22,7 @@ export default function News() {
                     bg: '#171717',
                 }}
             >
-                improve the Flux network
+                Suggestion box
             </Button>
         </Link>
     )

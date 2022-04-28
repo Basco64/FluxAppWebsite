@@ -4,6 +4,7 @@ import { Heading, Stack, FormControl, FormLabel, Input, Button, useColorModeValu
 import { Formik, Form, Field } from 'formik';
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footers/Footer'
+import ResetButton from '../../components/Buttons/ResetButton.tsx';
 
 export default function WeNeedYou() {
 
@@ -16,16 +17,21 @@ export default function WeNeedYou() {
             id: id.current.value,
             idea: idea.current.value,
         };
-        console.log(newIdea);
 
-        fetch('api/ideas', {
+        fetch('api/idee', {
+            method: "POST",
             body: JSON.stringify(newIdea),
             headers: {
                 "Content-Type": "application/json"
-            },
-            method: "POST"
+            }
         })
-            .then(res => res.json())
+            .then(res => {
+                res.json()
+                console.log('Response received')
+                if (res.status === 200) {
+                    console.log('Response succeeded!')
+                }
+            })
             .then(data => {
                 console.log(data);
             });
@@ -55,13 +61,14 @@ export default function WeNeedYou() {
     return (
         <>
             <Head>
-                <title>We Need You!</title> 
-            </Head> 
-            <Header /> 
+                <title>We Need You!</title>
+            </Head>
+            <Header />
             <Heading as='h1' fontSize={{ base: "2xl", lg: "4xl" }} align={'center'} mb={10} fontWeight={'bold'} >Your Opinion Counts !!!</Heading >
             <Text as='h4' fontSize={{ base: "md", lg: "xl" }} align={'center'}>Feel free to give ideas for improvement for this site or even sites/games you would like to see on the Flux network</Text>
             <Stack mt='5em' mb='2em'>
                 <Formik
+                    enableReinitialize
                     let initialValues={{
                         id: "",
                         idea: ""
@@ -100,27 +107,21 @@ export default function WeNeedYou() {
                                 style={{ float: 'right' }}
                                 size={'md'}
                                 fontWeight="bold"
-                                textTransform="uppercase"
                                 fontSize={'lg'}
                                 bg={useColorModeValue('#b3b3b3', '#171717')}
                                 color={useColorModeValue('#171717', '#f7f7f7')}
                                 mt='3'
                             >Post
                             </Button>
-                            <Button
-                                isLoading={props.isSubmitting}
-                                type="submit"
-                                style={{ float: 'left' }}
+                            <ResetButton
                                 size={'md'}
                                 fontWeight="bold"
-                                textTransform="uppercase"
                                 fontSize={'lg'}
+                                mt='3'
                                 bg={useColorModeValue('#b3b3b3', '#171717')}
                                 color={useColorModeValue('#171717', '#f7f7f7')}
-                                mt='3'
                             >Clear
-                            </Button>
-
+                            </ResetButton>
                         </Form>
                     )}
                 </Formik>

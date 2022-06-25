@@ -16,10 +16,15 @@ export default function games(props) {
       </Head>
       <Header />
       <Heading fontSize='4xl' align={'center'} m={4}>Game Server hosted on the Flux network</Heading>
-      <SimpleGrid columns={{ base: "1", lg: "5" }} p={2}>
+      <SimpleGrid columns={{ sm: "1", md: "3", lg: "5" }} p={2}>
         {main.map(icone => (
           <Box mb={4} p={1} w="20rem" key={uuidv4()}>
-            <Stack align={'center'}>
+            <Stack
+              align={'center'}
+              style={{ borderRadius: '15px', overflow: 'hidden' }}
+              height={200}
+              width={200}
+            >
               <Image
                 className="card-img borderRadius "
                 src={icone.img}

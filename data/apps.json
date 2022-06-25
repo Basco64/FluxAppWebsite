@@ -152,34 +152,9 @@
             "name": "other",
             "data": [
                 {
-                    "title": "White Rabbit",
-                    "img": "/logo/whiteRabbit_logo.png",
-                    "link": "https://whiterabbit.app.runonflux.io/"
-                },
-                {
-                    "title": "PreSearch Vision Paper",
-                    "img": "/logo/presearch_logo.png",
-                    "link": "https://presearchpaper.app.runonflux.io/"
-                },
-                {
-                    "title": "Haven Paper Wallet",
-                    "img": "/logo/haven_logo.png",
-                    "link": "https://havenpaperwallet.app.runonflux.io/"
-                },
-                {
-                    "title": "Overview Parallel Mining",
-                    "img": "/logo/fluxMining_logo.png",
-                    "link": "https://paoverview.app.runonflux.io/"
-                },
-                {
-                    "title": "Paradigm Whitepaper",
-                    "img": "/logo/paradigm_logo.png",
-                    "link": "https://paradigmwhitepaper.app.runonflux.io/"
-                },
-                {
-                    "title": "FluxOS",
-                    "img": "/logo/FluxOS_logo_Grey_cube.png",
-                    "link": "https://home.runonflux.io/"
+                    "title": "Flux Node Info",
+                    "img": "/logo/flux_logo.png",
+                    "link": "https://fluxinfo.app.runonflux.io/"
                 },
                 {
                     "title": "Flux Block Explorer",
@@ -187,9 +162,34 @@
                     "link": "https://explorer.app.runonflux.io/"
                 },
                 {
-                    "title": "Nodify",
-                    "img": "/logo/fluxNode_logo.png",
-                    "link": "https://nodify.app.runonflux.io/"
+                    "title": "FluxOS",
+                    "img": "/logo/FluxOS_logo_Grey_cube.png",
+                    "link": "https://home.runonflux.io/"
+                },
+                {
+                    "title": "Overview Parallel Mining",
+                    "img": "/logo/fluxMining_logo.png",
+                    "link": "https://paoverview.app.runonflux.io/"
+                },
+                {
+                    "title": "Ravencoin Explorer",
+                    "img": "/logo/ravencoin_logo.png",
+                    "link": "https://ravenexplorer.app.runonflux.io/"
+                },
+                {
+                    "title": "Ravencoin Nodes",
+                    "img": "/logo/ravencoin_logo.png",
+                    "link": "https://ravencoinnodes.app.runonflux.io/"
+                },
+                {
+                    "title": "Paradigm Whitepaper",
+                    "img": "/logo/paradigm_logo.png",
+                    "link": "https://paradigmwhitepaper.app.runonflux.io/"
+                },
+                {
+                    "title": "Haven Paper Wallet",
+                    "img": "/logo/haven_logo.png",
+                    "link": "https://havenpaperwallet.app.runonflux.io/"
                 },
                 {
                     "title": "Flux Whitepaper",
@@ -205,11 +205,6 @@
                     "title": "Zelcore",
                     "img": "/logo/zelcore_logo.png",
                     "link": "https://zelcore.io/"
-                },
-                {
-                    "title": " libReddit",
-                    "img": "/logo/libreddit.png",
-                    "link": "https://libreddit.app.runonflux.io/"
                 },
                 {
                     "title": "Bitcoin Whitepaper",
@@ -232,16 +227,6 @@
                     "link": "https://kdachainwebwhitepaper.app.runonflux.io/"
                 },
                 {
-                    "title": "Flux Army Radio",
-                    "img": "/logo/radio2.png",
-                    "link": "https://fluxarmyradio.app.runonflux.io/"
-                },
-                {
-                    "title": "AtlasCloud Testnet",
-                    "img": "/logo/atlas-logo-neumorphism-light.png",
-                    "link": "https://atlascloudtestnet.app.runonflux.io/"
-                },
-                {
                     "title": "PokerTH Servers Hosted on FluxOS - Port 34567",
                     "img": "/logo/flux poker .png",
                     "link": "https://discord.com/channels/404415190835134464/870380555714326578/876145347255238656"
@@ -254,6 +239,18 @@
                 {
                     "game": "Minecraft",
                     "img": "/logo/minecraft logo.png",
+                    "name": "Flux Mine",
+                    "port": "38487, 31563, 37141, 32860"
+                },
+                {
+                    "game": "Minecraft",
+                    "img": "/logo/minecraft logo.png",
+                    "name": "Minecraft Server",
+                    "port": "33867"
+                },
+                {
+                    "game": "Minecraft",
+                    "img": "/logo/minecraft logo.png",
                     "name": "Vanilla Java-Based Minecraft Server",
                     "port": "33333"
                 },
@@ -262,12 +259,6 @@
                     "img": "/logo/minecraft logo.png",
                     "name": "Minecraft Bedrock Server",
                     "port": "35565"
-                },
-                {
-                    "game": "Minecraft",
-                    "img": "/logo/minecraft logo.png",
-                    "name": "Minecraft Server",
-                    "port": "31906"
                 },
                 {
                     "game": "Ark",
@@ -305,6 +296,61 @@
             "name": "dapps",
             "data": [
                 {
+                    "title": "Flux Folio",
+                    "img": "/logo/FluxFolio_logo.png",
+                    "link": "https://fluxfolio.app.runonflux.io/"
+                },
+                {
+                    "title": "KadCars NFT",
+                    "img": "/logo/KadCars_logo.png",
+                    "link": "https://kadcarsnft.app.runonflux.io/"
+                },
+                {
+                    "title": "Hotcafe",
+                    "img": "/logo/Hotcafe_logo.jpg",
+                    "link": "https://hotcafe.app.runonflux.io/"
+                },
+                {
+                    "title": "Aave",
+                    "img": "/logo/Aave_logo.png",
+                    "link": "https://aave.app.runonflux.io/"
+                },
+                {
+                    "title": "DEMONIX NFT",
+                    "img": "/logo/demonixNFT_logo.png",
+                    "link": "https://demonix.app.runonflux.io/"
+                },
+                {
+                    "title": "Next Cloud \n By the Flux Army Fondation",
+                    "img": "/logo/nextCloud_logo.png",
+                    "link": "https://nextcloud.app.runonflux.io/"
+                },
+                {
+                    "title": "Africa Swap",
+                    "img": "/logo/africaSwap_logo.png",
+                    "link": "https://africaswapnft.app.runonflux.io/"
+                },
+                {
+                    "title": " libReddit",
+                    "img": "/logo/libreddit.png",
+                    "link": "https://libreddit.app.runonflux.io/"
+                },
+                {
+                    "title": "Pangolin App",
+                    "img": "/logo/pangolinCoin.png",
+                    "link": "https://pangolin.app.runonflux.io/"
+                },
+                {
+                    "title": "Haven Vault",
+                    "img": "/logo/haven_logo.png",
+                    "link": "https://havenvaultmainnet.app.runonflux.io/"
+                },
+                {
+                    "title": "KD Swap",
+                    "img": "/logo/KDLaunch_logo.png",
+                    "link": "https://kdswap.app.runonflux.io/"
+                },
+                {
                     "title": "Keep3r",
                     "img": "/logo/Keep3r_logo.png",
                     "link": "https://keep3r.app.runonflux.io/"
@@ -315,39 +361,14 @@
                     "link": "https://chaincade.app.runonflux.io/"
                 },
                 {
-                    "title": "Anchor",
-                    "img": "/logo/anchor_logo.png",
-                    "link": "https://anchor.app.runonflux.io/"
-                },
-                {
-                    "title": "Cyrusoft PTY LTD",
-                    "img": "/logo/webDev_logo.png",
-                    "link": "https://cyrusoft.app.runonflux.io/"
-                },
-                {
-                    "title": "Mirror",
-                    "img": "/logo/mirror_logo.png",
-                    "link": "https://mirror.app.runonflux.io/"
-                },
-                {
                     "title": "Dibi Fetch",
                     "img": "/logo/DibiFetch_logo.png",
                     "link": "https://dibifetch.app.runonflux.io/"
                 },
                 {
-                    "title": "Tornado Cash Nova",
-                    "img": "/logo/tornado_logo.png",
-                    "link": "https://novatest.app.runonflux.io/"
-                },
-                {
                     "title": "Paradigm Website",
                     "img": "/logo/paradigm_logo.png",
                     "link": "https://paradigm.app.runonflux.io/"
-                },
-                {
-                    "title": "DocuShield",
-                    "img": "/logo/docuShield_logo.png",
-                    "link": "https://docushield.app.runonflux.io/"
                 },
                 {
                     "title": "Keep Token Dashboard",
@@ -365,30 +386,9 @@
                     "link": "https://tornadocash.app.runonflux.io/"
                 },
                 {
-                    "title": "Dolibarr",
-                    "img": "/logo/dolibarr_logo.png",
-                    "link": "https://dolibarr.app.runonflux.io/"
-                },
-                {
-                    "title": "NGinx",
-                    "img": "/logo/nginx_logo.png",
-                    "link": "https://corkscrewtest.app.runonflux.io/"
-                },
-                {
-                    "title": "Haven",
-                    "img": "/logo/haven_logo.png",
-                    "link": "https://havenwebvault.app.runonflux.io/"
-                },
-                {
                     "title": "KDLaunch",
                     "img": "/logo/KDLaunch_logo.png",
                     "link": "https://kdlaunch.app.runonflux.io/"
-                },
-                {
-                    "title": "Wiins",
-                    "creator": "etsraphael",
-                    "img": "/logo/wins-icon.png",
-                    "link": "https://wiins.app.runonflux.io/"
                 },
                 {
                     "title": "Drawio",
@@ -451,28 +451,10 @@
                     "link": "https://focalboard.app.runonflux.io/login"
                 },
                 {
-                    "title": "RustPad",
-                    "creator": null,
-                    "img": "/logo/rustpad.png",
-                    "link": "https://rustpad.app.runonflux.io/"
-                },
-                {
-                    "title": "EtherCalc",
-                    "creator": null,
-                    "img": "/logo/ethercalc.png",
-                    "link": "https://ethercalc.app.runonflux.io/"
-                },
-                {
                     "title": "OwnCast",
                     "creator": "gabekangas",
                     "img": "/logo/ownCast.png",
                     "link": "https://owncast.app.runonflux.io/"
-                },
-                {
-                    "title": "Bibliogram",
-                    "creator": "cloudrac3r",
-                    "img": "/logo/logo-bibliogram.png",
-                    "link": "https://bibliogram.app.runonflux.io/"
                 }
             ]
         }

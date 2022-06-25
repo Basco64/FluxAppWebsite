@@ -16,7 +16,7 @@ export default function Home(props) {
       </Head>
       <Header />
       <Heading fontSize='4xl' align={'center'} m={4}>Official Flux Social Networks</Heading>
-      <SimpleGrid columns={{ base: "1", lg: "5" }} p={2} justify={'center'}>
+      <SimpleGrid columns={{ sm: "1", md: "3", lg: "5" }} p={2} justify={'center'}>
         {main.map(icone => (
           <Box mb={4} p={1} w="20rem" key={uuidv4()}>
             <Stack align={'center'}>
@@ -24,9 +24,10 @@ export default function Home(props) {
                 href={icone.link}
                 target="_blank"
                 rel="noreferrer"
+                style={{ borderRadius: '25px', overflow: 'hidden' }}
+                height={200}
               >
                 <Image
-                  className="card-img borderRadius "
                   src={icone.img}
                   alt="Card image"
                   width={200}

@@ -1,9 +1,9 @@
 import { Button, useColorModeValue } from '@chakra-ui/react';
 import Link from 'next/link'
 
-export default function News() {
+export default function FluxArmy() {
     return (
-        <Link href="/news" passHref scroll={false}>
+        <Link href="/fluxArmyProjects" passHref scroll={false}>
             <Button
                 size={'lg'}
                 fontWeight="bold"
@@ -22,7 +22,7 @@ export default function News() {
                     bg: '#171717',
                 }}
             >
-                News
+                Flux Foundation Projects
             </Button>
         </Link>
     )

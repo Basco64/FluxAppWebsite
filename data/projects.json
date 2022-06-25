@@ -1,0 +1,28 @@
+{
+    "projectsList": [
+        {
+            "project": "Beach Cleanup",
+            "img": "/projects/Beach_Cleanup.png",
+            "description": "Help our volunteers clean the beaches of rubish to make the beaches more enjoyable to families and visitors.",
+            "link": "https://www.gofundme.com/6c7ym-beach-cleanup"
+        },
+        {
+            "project": "Help raise funds to help needy with medications",
+            "img": "/projects/helpHospitals.jpg",
+            "description": "After doing a few community awareness events, we found that most in need were medications, with your funding, our volunteers will purchase and distribute the medications to ensure the medications are reaching the ones needing them the most.",
+            "link": "https://www.gofundme.com/help-raise-funds-to-help-needy-with-medications"
+        },
+        {
+            "project": "Water Treatment",
+            "img": "/projects/WaterTreatment.jpg",
+            "description": "Help us help them to get their water treatment system back up and running in a small town in Venezuela, the area that this facility is serving does not have the resources to purchase any chlorine to treat the water which in turn is causing many of the residents of this sector of the town to have stomach issues, every cent counts.",
+            "link": "https://www.gofundme.com/water-treatment"
+        },
+        {
+            "project": "Park Rebuild project in Venezuela",
+            "img": "/projects/parkRebuild.jpg",
+            "description": "We will be using the funds to bring an old park back to a usable state after Venezuela suffered from many economic hardships many of the smaller towns lack areas for the children to safely play, we have gained permission from the local mayor to bring a small park back to life and with any funds left over we will use to purchase chlorine to help the sector of the town that the park is in to treat the water, as of right now this area of the town is seeing a lot of stomach issues from the residents.",
+            "link": "https://www.gofundme.com/park-rebeautification-project"
+        }
+    ]
+}

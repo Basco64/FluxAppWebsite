@@ -15,7 +15,7 @@ export default function DatatabsNodeVideo() {
 
   function DataTabs({ data }) {
     return (
-      <Tabs isFitted variant='soft-rounded'>
+      <Tabs isFitted variant='soft-rounded' lazyBehavior>
         <TabList mb='1em' bg='#000'>
           {data.map((tab, index) => (
             <Tab key={uuidv4()} _selected={{ color: 'white', bg: 'blue.500' }}>{tab.label}</Tab>

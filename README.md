@@ -1,1 +1,1 @@
-A Website that gathers information about the Flux network as well as all the dApps present on this network
+A Website that gathers information about the Flux network as well as all the dApps present on this network.

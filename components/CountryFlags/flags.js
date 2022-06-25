@@ -7,6 +7,21 @@ export default function FlagsCountry() {
         <>
             <SimpleGrid columns={{ base: "4", lg: "8" }} spacing='10' my='6'>
                 <Box >
+                    <Link href='https://fluxarmy.org/' target='_blank'>
+                        <Image src='/flag/fluxArmyFondation.png' style={{ clipPath: 'ellipse(50% 50%' }} width={'100px'} alt="Army" />
+                    </Link>
+                </Box>
+                <Box >
+                    <Link href='https://www.fluxarmy.com/' target='_blank'>
+                        <Image src='/flag/fluxArmyPurple.png' style={{ clipPath: 'ellipse(50% 50%' }} width={'100px'} alt="Army" />
+                    </Link>
+                </Box>
+                <Box >
+                    <Link href='https://fluxarmyswag.com/' target='_blank'>
+                        <Image src='/flag/fluxArmyRed.png' style={{ clipPath: 'ellipse(50% 50%' }} width={'100px'} alt="Army" />
+                    </Link>
+                </Box>
+                <Box >
                     <Link href='https://mobile.twitter.com/flux_army' target='_blank'>
                         <Image src='/flag/army.jpg' style={{ clipPath: 'ellipse(50% 50%' }} width={'100px'} alt="Army" />
                     </Link>

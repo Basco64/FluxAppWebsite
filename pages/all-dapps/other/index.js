@@ -15,7 +15,7 @@ export default function Home(props) {
       </Head>
       <Header />
       <Heading fontSize='4xl' m={4} p={4}></Heading>
-      <SimpleGrid columns={{ base: "1", lg: "5" }} p={2}>
+      <SimpleGrid columns={{ base: "1", md: "3", lg: "5" }} p={2}>
         {main.map(icone => (
           <Box mb={4} p={1} w="20rem" key={uuidv4()}>
             <Stack align={'center'}>
@@ -23,9 +23,10 @@ export default function Home(props) {
                 href={icone.link}
                 target="_blank"
                 rel="noreferrer"
+                style={{ borderRadius: '25px', overflow: 'hidden' }}
+                height={200}
               >
                 <Image
-                  className="card-img borderRadius "
                   src={icone.img}
                   alt="Card image"
                   width={200}

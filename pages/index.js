@@ -3,6 +3,7 @@ import Header from '../components/Header/Header';
 import { Text, Box, useColorModeValue, Heading, Stack, Image, Button, Flex, AspectRatio } from '@chakra-ui/react'
 import TabTradeFlux from '../components/Tabs/TabTradeFlux';
 import Footer from '../components/Footers/Footer';
+import WhatTheFluxBtn from '../components/other/WhatTheFluxComponent';
 
 
 export default function Home(props) {
@@ -91,11 +92,7 @@ export default function Home(props) {
           <Text fontSize='xl' align='center' p={'2em'} fontWeight='bold'>
             I created this site for the FluxArmy members or even just people who land here by chance and know as much as possible about the Flux network.
           </Text>
-          <Text fontSize='xl' align='center' pb={'1em'} fontWeight='bold'>
-            I am a beginner so the appearance of the site can be disturbing,
-            constructive criticism is greatly appreciated,
-            don't hesitate to dm me on discord: Basco#6472 .
-          </Text>
+          <WhatTheFluxBtn />
         </Stack>
 
         {/* Card Flux Token */}

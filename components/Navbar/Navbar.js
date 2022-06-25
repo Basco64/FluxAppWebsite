@@ -5,6 +5,7 @@ import FluxArmy from './NavButtons/FluxArmy';
 import News from './NavButtons/News';
 import BuildFlux from './NavButtons/BuildFlux';
 import Improve from './NavButtons/Improve';
+import FluxArmyProjects from './NavButtons/FluxArmyProjects';
 import { Flex, IconButton, useColorModeValue } from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 
@@ -28,8 +29,8 @@ export default function NavBar() {
           <News />
           <Dapps />
           <FluxArmy />
+          <FluxArmyProjects />
           <BuildFlux />
-          <Improve />
         </Flex>
 
         {/* Mobile */}
@@ -69,15 +70,16 @@ export default function NavBar() {
         <Flex
           flexDir="column"
           align="center"
+          gap='0.75em'
+          my='1.5em'
         >
           <Home />
           <News />
           <Dapps />
           <FluxArmy />
+          <FluxArmyProjects />
           <BuildFlux />
-          <Improve />
         </Flex>
-
       </Flex>
     </Flex>
   )

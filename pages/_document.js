@@ -8,7 +8,7 @@ class MyDocument extends Document {
         return (
             <Html lang='en'>
                 <Head />
-                    <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+                    <ColorModeScript initialColorMode={theme.initialColorMode} />
                     <Main />
                     <NextScript />
             </Html>

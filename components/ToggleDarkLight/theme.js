@@ -2,7 +2,7 @@ import { extendTheme } from "@chakra-ui/react"
 import { mode } from '@chakra-ui/theme-tools'
 
 const theme = extendTheme({
-  initialColorMode: "light",
+  initialColorMode: "dark",
   useSystemColorMode: false,
   colors: {
     primary: '#845EC2',
@@ -20,6 +20,11 @@ const theme = extendTheme({
       }
     })
   },
+  breakpoints: {
+    sm: '360px',
+    md: '800px',
+    lg: '1280px'
+  }
 });
 
 export default theme

@@ -158,7 +158,7 @@ export default function Home(props) {
       {/* Tab Trade Flux */}
 
       <Stack w={{ base: "100%", lg: "33%" }} pb={5} pt={5}>
-        <Text fontSize='3xl' align={'center'} fontWeight='bold' textDecoration='underline' >Trade Flux Today !</Text>
+        <Text py={3} fontSize='3xl' align={'center'} fontWeight='bold' textDecoration='underline' >Trade Flux Today !</Text>
         <TabTradeFlux />
       </Stack>
 

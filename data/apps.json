@@ -238,6 +238,12 @@
             "data": [
                 {
                     "game": "Minecraft",
+                    "img": "/logo/Quake_III_logo.png",
+                    "name": "Quake III server",
+                    "port": "33333"
+                },
+                {
+                    "game": "Minecraft",
                     "img": "/logo/minecraft logo.png",
                     "name": "Flux Mine",
                     "port": "38487, 31563, 37141, 32860"
@@ -296,6 +302,31 @@
             "name": "dapps",
             "data": [
                 {
+                    "title": "The Miners Of Kadenia",
+                    "img": "/logo/MOK_logo.jpg",
+                    "link": "https://themok.app.runonflux.io/"
+                },
+                {
+                    "title": "Ergo Auctions",
+                    "img": "/logo/Ergo_auctions_logo.jpg",
+                    "link": "https://ergoauctions.app.runonflux.io/"
+                },
+                {
+                    "title": "Osmosis",
+                    "img": "/logo/Osmosis_swap_logo.png",
+                    "link": "https://osmosis.app.runonflux.io/"
+                },
+                {
+                    "title": "Davidson Consulting",
+                    "img": "/logo/davidson_logo.jpg",
+                    "link": "https://davidsonpoc.app.runonflux.io/"
+                },
+                {
+                    "title": "Covid Visu",
+                    "img": "/logo/covid_logo.jpg",
+                    "link": "https://appcovidvisu.app.runonflux.io/"
+                },
+                {
                     "title": "Flux Folio",
                     "img": "/logo/FluxFolio_logo.png",
                     "link": "https://fluxfolio.app.runonflux.io/"
@@ -316,16 +347,6 @@
                     "link": "https://aave.app.runonflux.io/"
                 },
                 {
-                    "title": "DEMONIX NFT",
-                    "img": "/logo/demonixNFT_logo.png",
-                    "link": "https://demonix.app.runonflux.io/"
-                },
-                {
-                    "title": "Next Cloud \n By the Flux Army Fondation",
-                    "img": "/logo/nextCloud_logo.png",
-                    "link": "https://nextcloud.app.runonflux.io/"
-                },
-                {
                     "title": "Africa Swap",
                     "img": "/logo/africaSwap_logo.png",
                     "link": "https://africaswapnft.app.runonflux.io/"
@@ -344,11 +365,6 @@
                     "title": "Haven Vault",
                     "img": "/logo/haven_logo.png",
                     "link": "https://havenvaultmainnet.app.runonflux.io/"
-                },
-                {
-                    "title": "KD Swap",
-                    "img": "/logo/KDLaunch_logo.png",
-                    "link": "https://kdswap.app.runonflux.io/"
                 },
                 {
                     "title": "Keep3r",
@@ -379,11 +395,6 @@
                     "title": "Sifchain",
                     "img": "/logo/SifchainGold_logo.png",
                     "link": "https://sifchainfinance.app.runonflux.io/"
-                },
-                {
-                    "title": "Tornado cash",
-                    "img": "/logo/tornado_logo.png",
-                    "link": "https://tornadocash.app.runonflux.io/"
                 },
                 {
                     "title": "KDLaunch",

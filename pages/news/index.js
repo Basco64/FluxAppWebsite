@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footers/Footer';
 import YoutubeAMA from '../../components/Youtube/YoutubeAMA';
-import YoutubeCorePodcast from '../../components/Youtube/YoutubeCorePodcast'
 import { Text, Box, Stack, SimpleGrid, VStack, Link, Image, Heading, StackDivider, Container } from '@chakra-ui/react';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
 
@@ -24,13 +23,21 @@ export default function news(props) {
       <Header />
       <SimpleGrid my='10' columns={{ base: "1", md: "2", lg: "2" }} p={5}>
 
-        {/* Last Youtube AMA and Core Podcast*/}
+        {/* Last Youtube AMA */}
 
         <Stack align={'center'}>
           <Heading textDecor={'underline'} color={"#2b61d1"} fontWeight='bold'>Last AMA</Heading>
           <YoutubeAMA />
-          <Heading textDecor={'underline'} color={"#2b61d1"} fontWeight='bold' pt={6}>Last Core Podcast</Heading>
-          <YoutubeCorePodcast />
+          <Heading textDecor={'underline'} color={"#2b61d1"} fontWeight='bold' pt={6}>Flux Highlights</Heading>
+          <TwitterTimelineEmbed
+            sourceType="profile"
+            screenName="flux_reports"
+            theme="dark"
+            noScrollbar
+            noFooter
+            noHeader
+            options={{ height: 400, width: 700 }}
+          />
         </Stack>
 
         {/* Medium */}
@@ -45,7 +52,7 @@ export default function news(props) {
             divider={<StackDivider borderColor='gray.200' />}
             spacing={2}
             align='stretch'
-            maxHeight={'735px'}
+            maxHeight={'790px'}
             overflowY={'auto'}
           >
             <Box>
@@ -119,6 +126,7 @@ export default function news(props) {
             screenName="RunOnFlux"
             theme="dark"
             noScrollbar
+            noFooter
             options={{ height: 800, width: 700 }}
           />
         </Stack>

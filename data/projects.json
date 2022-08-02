@@ -1,6 +1,18 @@
 {
     "projectsList": [
         {
+            "project": "Establish a food bank",
+            "img": "/projects/Establish a food bank.jpg",
+            "description": "This fundraiser is to help us establish a food bank in the city of Cumana, Venezuela; as of current, we have a small food bank but need help to restock our shelves, we pass the foods out to needy families after screening and focus on children that live on the streets. Thank you for any help, every penny counts.",
+            "link": "https://www.gofundme.com/f/establish-a-food-bank"
+        },
+        {
+            "project": "Raise funds and awareness",
+            "img": "/projects/Raise funds and awareness.jpg",
+            "description": " We are raising funds to donate to the HONOR HER Foundation their mission statement.\n Honor HER is committed to providing meals, lodging, access to medical care and job placement services for identified women veterans who are homeless or in danger of becoming homeless.\n Please help us to help them, they are the only female homeless shelter in the region and are doing great things for our female veterans! so honored to help them. \n https://www.honorher.org/ ",
+            "link": "https://www.gofundme.com/f/raise-funds-and-awareness"
+        },
+        {
             "project": "Beach Cleanup",
             "img": "/projects/Beach_Cleanup.png",
             "description": "Help our volunteers clean the beaches of rubish to make the beaches more enjoyable to families and visitors.",

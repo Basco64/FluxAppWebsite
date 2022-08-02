@@ -38,6 +38,11 @@ export default function BuildFlux() {
                     >Deploy an dApp
                     </MenuItem>
                 </Link>
+                <Link href="/deploy/stackFluxInTitanNode" passHref scroll={false}>
+                    <MenuItem
+                    >Stack your Flux
+                    </MenuItem>
+                </Link>
             </MenuList>
         </Menu>
     )

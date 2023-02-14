@@ -86,11 +86,16 @@ export default function Home(props) {
 
         <Stack w={{ base: "100%", lg: "33%" }}>
           <Text fontSize='xl' align='center' pt={"2em"} fontWeight='bold'>
-            Hi all and welcome <br />
-            I'm Basco, proud member of the FluxArmy!
+          Flux is the new generation of scalable decentralized cloud infrastructure. 
+          Simply develop, manage, and spawn your applications on multiple servers at once. 
+          Ready for Web 3.0, dApps, and more.
           </Text>
           <Text fontSize='xl' align='center' p={'2em'} fontWeight='bold'>
-            I created this site for the FluxArmy members or even just people who land here by chance and know as much as possible about the Flux network.
+            A comprehensive suite of decentralized computing services and blockchain-as-a-service solutions. 
+            The Flux ecosystem consists of: Fluxnodes' decentralized infrastructure, FluxOS cloud operating system,
+            Zelcore self-custody multi-asset wallet and blockchain app suite, and finally the Flux blockchain 
+            for on-chain governance, economics, and parallel assets to provide interoperability with other blockchains 
+            and DeFi access.
           </Text>
           <WhatTheFluxBtn />
         </Stack>

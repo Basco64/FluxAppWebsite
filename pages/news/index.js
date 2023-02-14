@@ -23,7 +23,7 @@ export default function news(props) {
       <Header />
       <SimpleGrid my='10' columns={{ base: "1", md: "2", lg: "2" }} p={5}>
 
-        {/* Last Youtube AMA */}
+        {/* Last Youtube AMA and Flux reports Twitter*/}
 
         <Stack align={'center'}>
           <Heading textDecor={'underline'} color={"#2b61d1"} fontWeight='bold'>Last AMA</Heading>
@@ -36,7 +36,8 @@ export default function news(props) {
             noScrollbar
             noFooter
             noHeader
-            options={{ height: 400, width: 700 }}
+            noBorders
+            options={{ height: 450, width: 700}}
           />
         </Stack>
 
@@ -56,14 +57,14 @@ export default function news(props) {
             overflowY={'auto'}
           >
             <Box>
-              <Link href={mediumArticles1.link}>
+              <Link href={mediumArticles2.link}>
                 <Stack float={'left'}>
                   <Image m={2} w={'300px'} h={'180px'} src={mediumArticles1.thumbnail}></Image>
                 </Stack>
-                <Stack>
+                <Stack >
                   <Text noOfLines={{ base: "2", md: "2", lg: "4" }} fontWeight={'bold'}>{mediumArticles1.title}</Text>
                   <Text fontStyle={'italic'}>{mediumArticles1.pubDate.substring(0, 11)}</Text>
-                  <Text noOfLines={{ base: "4", md: "4", lg: "4" }} >{mediumArticles1.content.substring(8, 190)} ...</Text>
+                  <Text noOfLines={{ base: "4", md: "4", lg: "4" }}>{mediumArticles1.content.substring(0, 190).replace(/<\/?(?!\!)[^>]*>/gi, '')} ...</Text>
                 </Stack>
               </Link>
             </Box>
@@ -75,7 +76,7 @@ export default function news(props) {
                 <Stack>
                   <Text noOfLines={{ base: "2", md: "2", lg: "4" }} fontWeight={'bold'}>{mediumArticles2.title}</Text>
                   <Text fontStyle={'italic'}>{mediumArticles2.pubDate.substring(0, 11)}</Text>
-                  <Text noOfLines={{ base: "4", md: "4", lg: "4" }}>{mediumArticles2.content.substring(8, 190)} ...</Text>
+                  <Text noOfLines={{ base: "4", md: "4", lg: "4" }}>{mediumArticles2.content.substring(0, 190).replace(/<\/?(?!\!)[^>]*>/gi, '')} ...</Text>
                 </Stack>
               </Link>
             </Box>
@@ -86,8 +87,8 @@ export default function news(props) {
                 </Stack>
                 <Stack>
                   <Text noOfLines={{ base: "2", md: "2", lg: "4" }} fontWeight={'bold'}>{mediumArticles3.title}</Text>
-                  <Text fontStyle={'italic'}>{mediumArticles3.pubDate.substring(0, 11)}</Text>
-                  <Text noOfLines={{ base: "4", md: "4", lg: "4" }}>{mediumArticles3.content.substring(8, 190)} ...</Text>
+                  <Text fontStyle={'italic'}>{mediumArticles3.pubDate.substring(0, 11).replace(/<\/?(?!\!)[^>]*>/gi, '')}</Text>
+                  <Text noOfLines={{ base: "4", md: "4", lg: "4" }}>{mediumArticles3.content.substring(0, 190)} ...</Text>
                 </Stack>
               </Link>
             </Box>
@@ -99,7 +100,7 @@ export default function news(props) {
                 <Stack>
                   <Text noOfLines={{ base: "2", md: "2", lg: "4" }} fontWeight={'bold'}>{mediumArticles4.title}</Text>
                   <Text fontStyle={'italic'}>{mediumArticles4.pubDate.substring(0, 11)}</Text>
-                  <Text noOfLines={{ base: "4", md: "4", lg: "4" }}>{mediumArticles4.content.substring(8, 190)} ...</Text>
+                  <Text noOfLines={{ base: "4", md: "4", lg: "4" }}>{mediumArticles4.content.substring(0, 190).replace(/<\/?(?!\!)[^>]*>/gi, '')} ...</Text>
                 </Stack>
               </Link>
             </Box>
@@ -111,7 +112,7 @@ export default function news(props) {
                 <Stack>
                   <Text noOfLines={{ base: "2", md: "2", lg: "4" }} fontWeight={'bold'}>{mediumArticles5.title}</Text>
                   <Text fontStyle={'italic'}>{mediumArticles5.pubDate.substring(0, 11)}</Text>
-                  <Text noOfLines={{ base: "4", md: "4", lg: "4" }}>{mediumArticles5.content.substring(8, 190)} ...</Text>
+                  <Text noOfLines={{ base: "4", md: "4", lg: "4" }}>{mediumArticles5.content.substring(0, 190).replace(/<\/?(?!\!)[^>]*>/gi, '')} ...</Text>
                 </Stack>
               </Link>
             </Box>
@@ -127,7 +128,7 @@ export default function news(props) {
             theme="dark"
             noScrollbar
             noFooter
-            options={{ height: 800, width: 700 }}
+            options={{ height: 800, width: 700}}
           />
         </Stack>
 

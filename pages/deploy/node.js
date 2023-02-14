@@ -25,7 +25,7 @@ export default function deployNode(props) {
 
         {/* Flux-Node Structure */}
 
-        <Stack orientation={{ base: "vertical", lg: "horizontal" }}>
+        <Stack>
           <TableContainer>
             <Table display='inline-block'>
               < Thead>
